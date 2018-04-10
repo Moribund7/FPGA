@@ -1,0 +1,34 @@
+module CHOSE_FILTR(
+							SW,
+							iRed,
+							iBlue,
+							iGreen,
+							iRed_new,
+							iBlue_new,
+							iGreen_new);
+							
+input    [9:0] SW;				
+input		[9:0]	iRed;
+input		[9:0]	iGreen;
+input		[9:0]	iBlue;
+
+output   [9:0] iRed_new;
+output	[9:0]	iBlue_new;
+output   [9:0] iGreen_new;						
+
+
+
+always begin
+
+if(SW[9])begin
+Filtr_SWITCH 			f1(   .SW(SW[2:0]),
+							.iRed(mRed),
+							.iGreen(mGreen),
+							.iBlue(mBlue),
+							//out
+							.iRed_new(mRed_new),
+							.iGreen_new(mGreen_new),
+							.iBlue_new(mBlue_new));
+end
+
+end

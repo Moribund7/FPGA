@@ -1,0 +1,21 @@
+module Filtr(
+				iRed
+				iBlue
+				iGreen
+				iRed_new
+				iBlue_new
+				iGreen_new);
+				
+input		[9:0]	iRed;
+input		[9:0]	iGreen;
+input		[9:0]	iBlue;
+
+output   [9:0] iRed_new;
+output	[9:0]	iBlue_new;
+output   [9:0] iGreen_new;
+
+assign	iRed_new      =	iRed;   																				//iRed -> 0 dziala (wycina dany kolor)
+assign	iBlue_new	  =	iGreen;
+assign	iGreen_new    =	iBlue;
+
+endmodule
