@@ -86,34 +86,117 @@ parameter V_HALF = V_FRONT+V_SYNC+(V_ACT/2)+30;
 reg		[9:0]	oVGA_R_temp;
 reg		[9:0]	oVGA_G_temp;
 reg		[9:0]	oVGA_B_temp;
+
+integer mnoznik1;
+integer mnoznik2;
 /////////////////////////////////TO DO: wymyślić co można chcieć wyświetlać na różnych ekranach i  jak je sterwać. Sprawdzić możliwosci !!!!!
+
+
+///////////////////////////////////////Wyświetla fragment obrazu na w różnej jasności
 always @ * begin
-	if(SW[7]==0)begin
+	if(SW[7]==0&& SW[6]==0)begin
 		oVGA_G_temp		=	iGreen;
 		oVGA_B_temp		=	iBlue;
 		oVGA_R_temp		=	iRed;
 		end
-	else begin       //Ustalenie max danego koloru 10'b1111111111
+	else if(SW[7]==1&&SW[6]==0)begin       //Ustalenie max danego koloru 10'b1111111111
 		oVGA_G_temp		=	(H_Cont<=H_HALF && V_Cont<=V_HALF) ?   iGreen :      //lewy górny  dobre parametry to 480,270
 					 (H_Cont>H_HALF && V_Cont<=V_HALF) ?   iGreen/2 :				 //prawy górny
-					 (H_Cont<=H_HALF && V_Cont>V_HALF) ?   iGreen*2 :	//11111'b1 :      //lewy dolny
+					 (H_Cont<=H_HALF && V_Cont>V_HALF) ?   iGreen/4 :	//11111'b1 :      //lewy dolny
 					 (H_Cont>H_HALF && V_Cont>V_HALF ) ?    iGreen/8 :
 //	 (H_Cont>H_HALF && V_Cont>V_HALF && iGreen>=(iBlue+iRed)/2) ?    iGreen : //!!!!!!!!!!!!!!!!
 							0;
 		oVGA_B_temp		=	(H_Cont<=H_HALF && V_Cont<=V_HALF) ?   iBlue :      //lewy górny  dobre parametry to 480,270
 					 (H_Cont>H_HALF && V_Cont<=V_HALF) ?   iBlue /2 :				 //prawy górny
-					 (H_Cont<=H_HALF && V_Cont>V_HALF) ?   iBlue*2:	//11111'b1 :      //lewy dolny
+					 (H_Cont<=H_HALF && V_Cont>V_HALF) ?   iBlue/4 : 	//11111'b1 :      //lewy dolny
 					 (H_Cont>H_HALF && V_Cont>V_HALF) ?    iBlue /8 :
 							0;
 							
 		oVGA_R_temp		= (H_Cont<=H_HALF && V_Cont<=V_HALF) ?   iRed :      //lewy górny  dobre parametry to 480,270
 					 (H_Cont>H_HALF && V_Cont<=V_HALF) ?   iRed/2 :				 //prawy górny
-					 (H_Cont<=H_HALF && V_Cont>V_HALF) ?   iRed*2:	     //lewy dolny
+					 (H_Cont<=H_HALF && V_Cont>V_HALF) ?   iRed/4 :	     //lewy dolny
 					 (H_Cont>H_HALF && V_Cont>V_HALF) ?    iRed/8 :				 		//prawy dolny				
                       0 ;
 		end
 	
+	
+	
+	////////////////////////// Wyświetla cztery różne kolorki 
+	
+	if (SW[7]==0&&SW[6]==1)begin
+				
+					
+	
+		oVGA_G_temp		=	(H_Cont<=H_HALF && V_Cont<=V_HALF) ?   iGreen :      //lewy górny  dobre parametry to 480,270
+					 (H_Cont>H_HALF && V_Cont<=V_HALF) ?   iGreen :				 //prawy górny
+					 (H_Cont<=H_HALF && V_Cont>V_HALF) ?   iGreen :	//11111'b1 :      //lewy dolny
+					 (H_Cont>H_HALF && V_Cont>V_HALF ) ?    0 :
+//	 (H_Cont>H_HALF && V_Cont>V_HALF && iGreen>=(iBlue+iRed)/2) ?    iGreen : //!!!!!!!!!!!!!!!!
+							0;
+		oVGA_B_temp		=	(H_Cont<=H_HALF && V_Cont<=V_HALF) ?   iBlue :      //lewy górny  dobre parametry to 480,270
+					 (H_Cont>H_HALF && V_Cont<=V_HALF) ?   iBlue :				 //prawy górny
+					 (H_Cont<=H_HALF && V_Cont>V_HALF) ?   0 : 	//11111'b1 :      //lewy dolny
+					 (H_Cont>H_HALF && V_Cont>V_HALF) ?    iBlue :
+							0;
+							
+		oVGA_R_temp		= (H_Cont<=H_HALF && V_Cont<=V_HALF) ?   iRed :      //lewy górny  dobre parametry to 480,270
+					 (H_Cont>H_HALF && V_Cont<=V_HALF) ?   0 :				 //prawy górny
+					 (H_Cont<=H_HALF && V_Cont>V_HALF) ?   iRed :	     //lewy dolny
+					 (H_Cont>H_HALF && V_Cont>V_HALF) ?    iRed :				 		//prawy dolny				
+                      0 ;
+		end
+	
+	if (SW[7]==1&&SW[6]==1)begin
+	
+	mnoznik1=(SW[2:0]==1) ? 1 :
+					(SW[2:0]==2) ? 2 :
+					(SW[2:0]==3) ? 3 :
+					(SW[2:0]==4) ? 4 :
+					(SW[2:0]==5) ? 5 :
+					(SW[2:0]==6) ? 6 :
+					(SW[2:0]==7) ? 7 :
+					0;
+		mnoznik2=(SW[5:3]==1) ? 1 :
+					(SW[5:3]==2) ? 2 :
+					(SW[5:3]==3) ? 3 :
+					(SW[5:3]==4) ? 4 :
+					(SW[5:3]==5) ? 5 :
+					(SW[5:3]==6) ? 6 :
+					(SW[5:3]==7) ? 7 :
+					0;	
+					
+					//////////TO DO: Normowanie (RED) się nie sprawdza, nalezy dodać przyciski odpowiadające za zmianę mianownika 
+	
+		oVGA_G_temp		=	(H_Cont<=H_HALF && V_Cont<=V_HALF) ?   iGreen :      //lewy górny  dobre parametry to 480,270
+					 (H_Cont>H_HALF && V_Cont<=V_HALF) ?   0 :				 //prawy górny
+					 (H_Cont<=H_HALF && V_Cont>V_HALF) ?   0 :	//11111'b1 :      //lewy dolny
+					 (H_Cont>H_HALF && V_Cont>V_HALF && iGreen>=(mnoznik1*iBlue+mnoznik2*iRed)/2) ?    iGreen : //!!!!!!!!!!!!!!!!
+					 (H_Cont>H_HALF && V_Cont>V_HALF && iGreen<(mnoznik1*iBlue+mnoznik2*iRed)/2) ? 0 :
+					  0;
+		oVGA_B_temp		=	(H_Cont<=H_HALF && V_Cont<=V_HALF) ?   iBlue :      //lewy górny  dobre parametry to 480,270
+					 (H_Cont>H_HALF && V_Cont<=V_HALF) ?   0 :				 //prawy górny
+					 (H_Cont<=H_HALF && V_Cont>V_HALF && iBlue>=(mnoznik1*iGreen+mnoznik2*iRed)/2) ?   iBlue :
+					 (H_Cont<=H_HALF && V_Cont>V_HALF && iBlue<(mnoznik1*iGreen+mnoznik2*iRed)/2) ?   0:
+					 (H_Cont>H_HALF && V_Cont>V_HALF) ?    0:
+							0;
+							
+		oVGA_R_temp		= (H_Cont<=H_HALF && V_Cont<=V_HALF) ?   iRed :      //lewy górny  dobre parametry to 480,270
+					 (H_Cont>H_HALF && V_Cont<=V_HALF && iRed>=(mnoznik1*iGreen+mnoznik2*iBlue)/(mnoznik1+mnoznik2)) ?   iRed :				 //prawy górny
+					 (H_Cont>H_HALF && V_Cont<=V_HALF  && iRed<(mnoznik1*iGreen+mnoznik2*iBlue)/2) ?   0 :	
+					 (H_Cont<=H_HALF && V_Cont>V_HALF) ?   0 :	     //lewy dolny
+					 (H_Cont>H_HALF && V_Cont>V_HALF) ?     0 :
+					 0;
+		end
+	
+	
+	
+	
 end
+
+
+
+
+
 
 assign oVGA_R = oVGA_R_temp;
 assign oVGA_G = oVGA_G_temp;

@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Tue Apr 17 11:51:23 2018
+Analysis & Synthesis Status : Successful - Tue Apr 17 13:26:08 2018
 Quartus Prime Version : 17.0.2 Build 602 07/19/2017 SJ Lite Edition
 Revision Name : DE1_SoC_TV
 Top-level Entity Name : DE1_SoC_TV
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 1280
+Total registers : 1286
 Total pins : 241
 Total virtual pins : 0
 Total block memory bits : 45,024
-Total DSP Blocks : 6
+Total DSP Blocks : 10
 Total HSSI RX PCSs : 0
 Total HSSI PMA RX Deserializers : 0
 Total HSSI TX PCSs : 0
