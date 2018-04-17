@@ -97,17 +97,18 @@ always @ * begin
 		oVGA_G_temp		=	(H_Cont<=H_HALF && V_Cont<=V_HALF) ?   iGreen :      //lewy górny  dobre parametry to 480,270
 					 (H_Cont>H_HALF && V_Cont<=V_HALF) ?   iGreen/2 :				 //prawy górny
 					 (H_Cont<=H_HALF && V_Cont>V_HALF) ?   iGreen*2 :	//11111'b1 :      //lewy dolny
-					 (H_Cont>H_HALF && V_Cont>V_HALF && iGreen>=(iBlue+iRed)/2) ?    iGreen : //!!!!!!!!!!!!!!!!
+					 (H_Cont>H_HALF && V_Cont>V_HALF ) ?    iGreen/8 :
+//	 (H_Cont>H_HALF && V_Cont>V_HALF && iGreen>=(iBlue+iRed)/2) ?    iGreen : //!!!!!!!!!!!!!!!!
 							0;
 		oVGA_B_temp		=	(H_Cont<=H_HALF && V_Cont<=V_HALF) ?   iBlue :      //lewy górny  dobre parametry to 480,270
 					 (H_Cont>H_HALF && V_Cont<=V_HALF) ?   iBlue /2 :				 //prawy górny
-					 (H_Cont<=H_HALF && V_Cont>V_HALF) ?   iBlue *2 :	//11111'b1 :      //lewy dolny
+					 (H_Cont<=H_HALF && V_Cont>V_HALF) ?   iBlue*2:	//11111'b1 :      //lewy dolny
 					 (H_Cont>H_HALF && V_Cont>V_HALF) ?    iBlue /8 :
 							0;
 							
 		oVGA_R_temp		= (H_Cont<=H_HALF && V_Cont<=V_HALF) ?   iRed :      //lewy górny  dobre parametry to 480,270
 					 (H_Cont>H_HALF && V_Cont<=V_HALF) ?   iRed/2 :				 //prawy górny
-					 (H_Cont<=H_HALF && V_Cont>V_HALF) ?   iRed*2 :	     //lewy dolny
+					 (H_Cont<=H_HALF && V_Cont>V_HALF) ?   iRed*2:	     //lewy dolny
 					 (H_Cont>H_HALF && V_Cont>V_HALF) ?    iRed/8 :				 		//prawy dolny				
                       0 ;
 		end

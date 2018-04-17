@@ -1,0 +1,6 @@
+vendor_name = ModelSim
+source_file = 1, /dmj/2015/fk370394/FPGA/projekt/obraz_z_kamery.bdf
+design_name = obraz_z_kamery
+instance = comp, \pin_name2~output , pin_name2~output, obraz_z_kamery, 1
+instance = comp, \pin_name1~input , pin_name1~input, obraz_z_kamery, 1
+instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, obraz_z_kamery, 1
