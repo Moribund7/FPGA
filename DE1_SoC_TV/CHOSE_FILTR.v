@@ -31,7 +31,7 @@ reg   [9:0] iGreen_temp;
 always begin
 					
 																		
-if(SW[9])begin                                    //jakiś randomowy filtr
+if(SW[9]==1 && SW[8]==0)begin                                    //jakiś randomowy filtr
 																		
 iRed_temp	  =	iRed;
 iBlue_temp	  =	iBlue;
@@ -66,7 +66,7 @@ if(SW[2]) begin
 	end
 			
 			
-	if(SW[8])begin      //zamienianie kolejnych kolorów ze sobą
+	if(SW[8]==1 && SW[9]==0)begin      //zamienianie kolejnych kolorów ze sobą
 
 iRed_temp	  =	iRed;
 iBlue_temp	  =	iBlue;

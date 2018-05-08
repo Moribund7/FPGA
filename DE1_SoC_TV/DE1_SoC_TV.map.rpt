@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DE1_SoC_TV
-Tue Apr 17 13:26:08 2018
+Tue May  8 12:30:53 2018
 Quartus Prime Version 17.0.2 Build 602 07/19/2017 SJ Lite Edition
 
 
@@ -18,120 +18,121 @@ Quartus Prime Version 17.0.2 Build 602 07/19/2017 SJ Lite Edition
  10. Analysis & Synthesis IP Cores Summary
  11. State Machine - |DE1_SoC_TV|I2C_AV_Config:u1|mSetup_ST
  12. Registers Protected by Synthesis
- 13. Registers Removed During Synthesis
- 14. Removed Registers Triggering Further Register Optimizations
- 15. General Register Statistics
- 16. Inverted Register Statistics
- 17. Multiplexer Restructuring Statistics (Restructuring Performed)
- 18. Source assignments for DIV:u5|lpm_divide:LPM_DIVIDE_component|lpm_divide_h3t:auto_generated|sign_div_unsign_3li:divider|alt_u_div_tuf:divider
- 19. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo1|dcfifo:dcfifo_component
- 20. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated
- 21. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|a_graycounter_nv6:rdptr_g1p
- 22. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|a_graycounter_jdc:wrptr_g1p
- 23. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|altsyncram_d3f1:fifo_ram
- 24. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|dffpipe_oe9:rs_brp
- 25. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|dffpipe_oe9:rs_bwp
- 26. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|alt_synch_pipe_8pl:rs_dgwp
- 27. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|alt_synch_pipe_8pl:rs_dgwp|dffpipe_pe9:dffpipe13
- 28. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|dffpipe_oe9:ws_brp
- 29. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|dffpipe_oe9:ws_bwp
- 30. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|alt_synch_pipe_9pl:ws_dgrp
- 31. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|alt_synch_pipe_9pl:ws_dgrp|dffpipe_qe9:dffpipe16
- 32. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo2|dcfifo:dcfifo_component
- 33. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated
- 34. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|a_graycounter_nv6:rdptr_g1p
- 35. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|a_graycounter_jdc:wrptr_g1p
- 36. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|altsyncram_d3f1:fifo_ram
- 37. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|dffpipe_oe9:rs_brp
- 38. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|dffpipe_oe9:rs_bwp
- 39. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|alt_synch_pipe_8pl:rs_dgwp
- 40. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|alt_synch_pipe_8pl:rs_dgwp|dffpipe_pe9:dffpipe13
- 41. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|dffpipe_oe9:ws_brp
- 42. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|dffpipe_oe9:ws_bwp
- 43. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|alt_synch_pipe_9pl:ws_dgrp
- 44. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|alt_synch_pipe_9pl:ws_dgrp|dffpipe_qe9:dffpipe16
- 45. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo1|dcfifo:dcfifo_component
- 46. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated
- 47. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|a_graycounter_nv6:rdptr_g1p
- 48. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|a_graycounter_jdc:wrptr_g1p
- 49. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|altsyncram_d3f1:fifo_ram
- 50. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|dffpipe_oe9:rs_brp
- 51. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|dffpipe_oe9:rs_bwp
- 52. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|alt_synch_pipe_8pl:rs_dgwp
- 53. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|alt_synch_pipe_8pl:rs_dgwp|dffpipe_pe9:dffpipe13
- 54. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|dffpipe_oe9:ws_brp
- 55. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|dffpipe_oe9:ws_bwp
- 56. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|alt_synch_pipe_9pl:ws_dgrp
- 57. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|alt_synch_pipe_9pl:ws_dgrp|dffpipe_qe9:dffpipe16
- 58. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo2|dcfifo:dcfifo_component
- 59. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated
- 60. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|a_graycounter_nv6:rdptr_g1p
- 61. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|a_graycounter_jdc:wrptr_g1p
- 62. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|altsyncram_d3f1:fifo_ram
- 63. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|dffpipe_oe9:rs_brp
- 64. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|dffpipe_oe9:rs_bwp
- 65. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|alt_synch_pipe_8pl:rs_dgwp
- 66. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|alt_synch_pipe_8pl:rs_dgwp|dffpipe_pe9:dffpipe13
- 67. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|dffpipe_oe9:ws_brp
- 68. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|dffpipe_oe9:ws_bwp
- 69. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|alt_synch_pipe_9pl:ws_dgrp
- 70. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|alt_synch_pipe_9pl:ws_dgrp|dffpipe_qe9:dffpipe16
- 71. Source assignments for Line_Buffer:u10|altshift_taps:ALTSHIFT_TAPS_component|shift_taps_9c61:auto_generated|altsyncram_ffj1:altsyncram2
- 72. Source assignments for Line_Buffer:u10|altshift_taps:ALTSHIFT_TAPS_component|shift_taps_9c61:auto_generated|cntr_b6h:cntr3
- 73. Source assignments for Line_Buffer:u11|altshift_taps:ALTSHIFT_TAPS_component|shift_taps_9c61:auto_generated|altsyncram_ffj1:altsyncram2
- 74. Source assignments for Line_Buffer:u11|altshift_taps:ALTSHIFT_TAPS_component|shift_taps_9c61:auto_generated|cntr_b6h:cntr3
- 75. Parameter Settings for User Entity Instance: DIV:u5|lpm_divide:LPM_DIVIDE_component
- 76. Parameter Settings for User Entity Instance: Sdram_Control_4Port:u6
- 77. Parameter Settings for User Entity Instance: Sdram_Control_4Port:u6|Sdram_PLL:sdram_pll1|Sdram_PLL_0002:sdram_pll_inst|altera_pll:altera_pll_i
- 78. Parameter Settings for User Entity Instance: Sdram_Control_4Port:u6|control_interface:control1
- 79. Parameter Settings for User Entity Instance: Sdram_Control_4Port:u6|command:command1
- 80. Parameter Settings for User Entity Instance: Sdram_Control_4Port:u6|sdr_data_path:data_path1
- 81. Parameter Settings for User Entity Instance: Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo1|dcfifo:dcfifo_component
- 82. Parameter Settings for User Entity Instance: Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo2|dcfifo:dcfifo_component
- 83. Parameter Settings for User Entity Instance: Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo1|dcfifo:dcfifo_component
- 84. Parameter Settings for User Entity Instance: Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo2|dcfifo:dcfifo_component
- 85. Parameter Settings for User Entity Instance: YCbCr2RGB:u8|MAC_3:u0
- 86. Parameter Settings for User Entity Instance: YCbCr2RGB:u8|MAC_3:u0|altera_mult_add:mac_3_inst
- 87. Parameter Settings for User Entity Instance: YCbCr2RGB:u8|MAC_3:u0|altera_mult_add:mac_3_inst|altera_mult_add_vp8c:auto_generated|altera_mult_add_rtl:altera_mult_add_rtl1
- 88. Parameter Settings for User Entity Instance: YCbCr2RGB:u8|MAC_3:u1
- 89. Parameter Settings for User Entity Instance: YCbCr2RGB:u8|MAC_3:u1|altera_mult_add:mac_3_inst
- 90. Parameter Settings for User Entity Instance: YCbCr2RGB:u8|MAC_3:u1|altera_mult_add:mac_3_inst|altera_mult_add_vp8c:auto_generated|altera_mult_add_rtl:altera_mult_add_rtl1
- 91. Parameter Settings for User Entity Instance: YCbCr2RGB:u8|MAC_3:u2
- 92. Parameter Settings for User Entity Instance: YCbCr2RGB:u8|MAC_3:u2|altera_mult_add:mac_3_inst
- 93. Parameter Settings for User Entity Instance: YCbCr2RGB:u8|MAC_3:u2|altera_mult_add:mac_3_inst|altera_mult_add_vp8c:auto_generated|altera_mult_add_rtl:altera_mult_add_rtl1
- 94. Parameter Settings for User Entity Instance: VGA_Ctrl:u9
- 95. Parameter Settings for User Entity Instance: Line_Buffer:u10|altshift_taps:ALTSHIFT_TAPS_component
- 96. Parameter Settings for User Entity Instance: Line_Buffer:u11|altshift_taps:ALTSHIFT_TAPS_component
- 97. Parameter Settings for User Entity Instance: AUDIO_DAC:u12
- 98. Parameter Settings for User Entity Instance: I2C_AV_Config:u1
- 99. Parameter Settings for Inferred Entity Instance: VGA_Ctrl:u9|lpm_divide:Div0
-100. dcfifo Parameter Settings by Entity Instance
-101. altshift_taps Parameter Settings by Entity Instance
-102. Port Connectivity Checks: "I2C_AV_Config:u1|I2C_Controller:u0"
-103. Port Connectivity Checks: "AUDIO_DAC:u12"
-104. Port Connectivity Checks: "Line_Buffer:u11"
-105. Port Connectivity Checks: "Line_Buffer:u10"
-106. Port Connectivity Checks: "VGA_Ctrl:u9"
-107. Port Connectivity Checks: "YCbCr2RGB:u8|MAC_3:u2"
-108. Port Connectivity Checks: "YCbCr2RGB:u8|MAC_3:u1"
-109. Port Connectivity Checks: "YCbCr2RGB:u8|MAC_3:u0"
-110. Port Connectivity Checks: "YCbCr2RGB:u8"
-111. Port Connectivity Checks: "YUV422_to_444:u7"
-112. Port Connectivity Checks: "Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo2"
-113. Port Connectivity Checks: "Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo1"
-114. Port Connectivity Checks: "Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo2"
-115. Port Connectivity Checks: "Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo1"
-116. Port Connectivity Checks: "Sdram_Control_4Port:u6|sdr_data_path:data_path1"
-117. Port Connectivity Checks: "Sdram_Control_4Port:u6|control_interface:control1"
-118. Port Connectivity Checks: "Sdram_Control_4Port:u6|Sdram_PLL:sdram_pll1"
-119. Port Connectivity Checks: "Sdram_Control_4Port:u6"
-120. Port Connectivity Checks: "DIV:u5"
-121. Port Connectivity Checks: "ITU_656_Decoder:u4"
-122. Port Connectivity Checks: "TD_Detect:u2"
-123. Port Connectivity Checks: "SEG7_LUT_6:u0"
-124. Post-Synthesis Netlist Statistics for Top Partition
-125. Elapsed Time Per Partition
-126. Analysis & Synthesis Messages
+ 13. User-Specified and Inferred Latches
+ 14. Registers Removed During Synthesis
+ 15. Removed Registers Triggering Further Register Optimizations
+ 16. General Register Statistics
+ 17. Inverted Register Statistics
+ 18. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 19. Source assignments for DIV:u5|lpm_divide:LPM_DIVIDE_component|lpm_divide_h3t:auto_generated|sign_div_unsign_3li:divider|alt_u_div_tuf:divider
+ 20. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo1|dcfifo:dcfifo_component
+ 21. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated
+ 22. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|a_graycounter_nv6:rdptr_g1p
+ 23. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|a_graycounter_jdc:wrptr_g1p
+ 24. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|altsyncram_d3f1:fifo_ram
+ 25. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|dffpipe_oe9:rs_brp
+ 26. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|dffpipe_oe9:rs_bwp
+ 27. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|alt_synch_pipe_8pl:rs_dgwp
+ 28. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|alt_synch_pipe_8pl:rs_dgwp|dffpipe_pe9:dffpipe13
+ 29. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|dffpipe_oe9:ws_brp
+ 30. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|dffpipe_oe9:ws_bwp
+ 31. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|alt_synch_pipe_9pl:ws_dgrp
+ 32. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|alt_synch_pipe_9pl:ws_dgrp|dffpipe_qe9:dffpipe16
+ 33. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo2|dcfifo:dcfifo_component
+ 34. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated
+ 35. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|a_graycounter_nv6:rdptr_g1p
+ 36. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|a_graycounter_jdc:wrptr_g1p
+ 37. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|altsyncram_d3f1:fifo_ram
+ 38. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|dffpipe_oe9:rs_brp
+ 39. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|dffpipe_oe9:rs_bwp
+ 40. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|alt_synch_pipe_8pl:rs_dgwp
+ 41. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|alt_synch_pipe_8pl:rs_dgwp|dffpipe_pe9:dffpipe13
+ 42. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|dffpipe_oe9:ws_brp
+ 43. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|dffpipe_oe9:ws_bwp
+ 44. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|alt_synch_pipe_9pl:ws_dgrp
+ 45. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|alt_synch_pipe_9pl:ws_dgrp|dffpipe_qe9:dffpipe16
+ 46. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo1|dcfifo:dcfifo_component
+ 47. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated
+ 48. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|a_graycounter_nv6:rdptr_g1p
+ 49. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|a_graycounter_jdc:wrptr_g1p
+ 50. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|altsyncram_d3f1:fifo_ram
+ 51. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|dffpipe_oe9:rs_brp
+ 52. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|dffpipe_oe9:rs_bwp
+ 53. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|alt_synch_pipe_8pl:rs_dgwp
+ 54. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|alt_synch_pipe_8pl:rs_dgwp|dffpipe_pe9:dffpipe13
+ 55. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|dffpipe_oe9:ws_brp
+ 56. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|dffpipe_oe9:ws_bwp
+ 57. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|alt_synch_pipe_9pl:ws_dgrp
+ 58. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|alt_synch_pipe_9pl:ws_dgrp|dffpipe_qe9:dffpipe16
+ 59. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo2|dcfifo:dcfifo_component
+ 60. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated
+ 61. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|a_graycounter_nv6:rdptr_g1p
+ 62. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|a_graycounter_jdc:wrptr_g1p
+ 63. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|altsyncram_d3f1:fifo_ram
+ 64. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|dffpipe_oe9:rs_brp
+ 65. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|dffpipe_oe9:rs_bwp
+ 66. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|alt_synch_pipe_8pl:rs_dgwp
+ 67. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|alt_synch_pipe_8pl:rs_dgwp|dffpipe_pe9:dffpipe13
+ 68. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|dffpipe_oe9:ws_brp
+ 69. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|dffpipe_oe9:ws_bwp
+ 70. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|alt_synch_pipe_9pl:ws_dgrp
+ 71. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|alt_synch_pipe_9pl:ws_dgrp|dffpipe_qe9:dffpipe16
+ 72. Source assignments for Line_Buffer:u10|altshift_taps:ALTSHIFT_TAPS_component|shift_taps_9c61:auto_generated|altsyncram_ffj1:altsyncram2
+ 73. Source assignments for Line_Buffer:u10|altshift_taps:ALTSHIFT_TAPS_component|shift_taps_9c61:auto_generated|cntr_b6h:cntr3
+ 74. Source assignments for Line_Buffer:u11|altshift_taps:ALTSHIFT_TAPS_component|shift_taps_9c61:auto_generated|altsyncram_ffj1:altsyncram2
+ 75. Source assignments for Line_Buffer:u11|altshift_taps:ALTSHIFT_TAPS_component|shift_taps_9c61:auto_generated|cntr_b6h:cntr3
+ 76. Parameter Settings for User Entity Instance: DIV:u5|lpm_divide:LPM_DIVIDE_component
+ 77. Parameter Settings for User Entity Instance: Sdram_Control_4Port:u6
+ 78. Parameter Settings for User Entity Instance: Sdram_Control_4Port:u6|Sdram_PLL:sdram_pll1|Sdram_PLL_0002:sdram_pll_inst|altera_pll:altera_pll_i
+ 79. Parameter Settings for User Entity Instance: Sdram_Control_4Port:u6|control_interface:control1
+ 80. Parameter Settings for User Entity Instance: Sdram_Control_4Port:u6|command:command1
+ 81. Parameter Settings for User Entity Instance: Sdram_Control_4Port:u6|sdr_data_path:data_path1
+ 82. Parameter Settings for User Entity Instance: Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo1|dcfifo:dcfifo_component
+ 83. Parameter Settings for User Entity Instance: Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo2|dcfifo:dcfifo_component
+ 84. Parameter Settings for User Entity Instance: Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo1|dcfifo:dcfifo_component
+ 85. Parameter Settings for User Entity Instance: Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo2|dcfifo:dcfifo_component
+ 86. Parameter Settings for User Entity Instance: YCbCr2RGB:u8|MAC_3:u0
+ 87. Parameter Settings for User Entity Instance: YCbCr2RGB:u8|MAC_3:u0|altera_mult_add:mac_3_inst
+ 88. Parameter Settings for User Entity Instance: YCbCr2RGB:u8|MAC_3:u0|altera_mult_add:mac_3_inst|altera_mult_add_vp8c:auto_generated|altera_mult_add_rtl:altera_mult_add_rtl1
+ 89. Parameter Settings for User Entity Instance: YCbCr2RGB:u8|MAC_3:u1
+ 90. Parameter Settings for User Entity Instance: YCbCr2RGB:u8|MAC_3:u1|altera_mult_add:mac_3_inst
+ 91. Parameter Settings for User Entity Instance: YCbCr2RGB:u8|MAC_3:u1|altera_mult_add:mac_3_inst|altera_mult_add_vp8c:auto_generated|altera_mult_add_rtl:altera_mult_add_rtl1
+ 92. Parameter Settings for User Entity Instance: YCbCr2RGB:u8|MAC_3:u2
+ 93. Parameter Settings for User Entity Instance: YCbCr2RGB:u8|MAC_3:u2|altera_mult_add:mac_3_inst
+ 94. Parameter Settings for User Entity Instance: YCbCr2RGB:u8|MAC_3:u2|altera_mult_add:mac_3_inst|altera_mult_add_vp8c:auto_generated|altera_mult_add_rtl:altera_mult_add_rtl1
+ 95. Parameter Settings for User Entity Instance: VGA_Ctrl:u9
+ 96. Parameter Settings for User Entity Instance: Line_Buffer:u10|altshift_taps:ALTSHIFT_TAPS_component
+ 97. Parameter Settings for User Entity Instance: Line_Buffer:u11|altshift_taps:ALTSHIFT_TAPS_component
+ 98. Parameter Settings for User Entity Instance: AUDIO_DAC:u12
+ 99. Parameter Settings for User Entity Instance: I2C_AV_Config:u1
+100. Parameter Settings for Inferred Entity Instance: VGA_Ctrl:u9|lpm_divide:Div0
+101. dcfifo Parameter Settings by Entity Instance
+102. altshift_taps Parameter Settings by Entity Instance
+103. Port Connectivity Checks: "I2C_AV_Config:u1|I2C_Controller:u0"
+104. Port Connectivity Checks: "AUDIO_DAC:u12"
+105. Port Connectivity Checks: "Line_Buffer:u11"
+106. Port Connectivity Checks: "Line_Buffer:u10"
+107. Port Connectivity Checks: "VGA_Ctrl:u9"
+108. Port Connectivity Checks: "YCbCr2RGB:u8|MAC_3:u2"
+109. Port Connectivity Checks: "YCbCr2RGB:u8|MAC_3:u1"
+110. Port Connectivity Checks: "YCbCr2RGB:u8|MAC_3:u0"
+111. Port Connectivity Checks: "YCbCr2RGB:u8"
+112. Port Connectivity Checks: "YUV422_to_444:u7"
+113. Port Connectivity Checks: "Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo2"
+114. Port Connectivity Checks: "Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo1"
+115. Port Connectivity Checks: "Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo2"
+116. Port Connectivity Checks: "Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo1"
+117. Port Connectivity Checks: "Sdram_Control_4Port:u6|sdr_data_path:data_path1"
+118. Port Connectivity Checks: "Sdram_Control_4Port:u6|control_interface:control1"
+119. Port Connectivity Checks: "Sdram_Control_4Port:u6|Sdram_PLL:sdram_pll1"
+120. Port Connectivity Checks: "Sdram_Control_4Port:u6"
+121. Port Connectivity Checks: "DIV:u5"
+122. Port Connectivity Checks: "ITU_656_Decoder:u4"
+123. Port Connectivity Checks: "TD_Detect:u2"
+124. Port Connectivity Checks: "SEG7_LUT_6:u0"
+125. Post-Synthesis Netlist Statistics for Top Partition
+126. Elapsed Time Per Partition
+127. Analysis & Synthesis Messages
 
 
 
@@ -158,7 +159,7 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Apr 17 13:26:08 2018       ;
+; Analysis & Synthesis Status     ; Successful - Tue May  8 12:30:53 2018       ;
 ; Quartus Prime Version           ; 17.0.2 Build 602 07/19/2017 SJ Lite Edition ;
 ; Revision Name                   ; DE1_SoC_TV                                  ;
 ; Top-level Entity Name           ; DE1_SoC_TV                                  ;
@@ -365,14 +366,14 @@ agreement for further details.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimate of Logic utilization (ALMs needed) ; 928            ;
+; Estimate of Logic utilization (ALMs needed) ; 925            ;
 ;                                             ;                ;
-; Combinational ALUT usage for logic          ; 1422           ;
-;     -- 7 input functions                    ; 3              ;
-;     -- 6 input functions                    ; 316            ;
-;     -- 5 input functions                    ; 172            ;
-;     -- 4 input functions                    ; 184            ;
-;     -- <=3 input functions                  ; 747            ;
+; Combinational ALUT usage for logic          ; 1435           ;
+;     -- 7 input functions                    ; 1              ;
+;     -- 6 input functions                    ; 291            ;
+;     -- 5 input functions                    ; 185            ;
+;     -- 4 input functions                    ; 182            ;
+;     -- <=3 input functions                  ; 776            ;
 ;                                             ;                ;
 ; Dedicated logic registers                   ; 1286           ;
 ;                                             ;                ;
@@ -387,8 +388,8 @@ agreement for further details.
 ;                                             ;                ;
 ; Maximum fan-out node                        ; TD_CLK27~input ;
 ; Maximum fan-out                             ; 798            ;
-; Total fan-out                               ; 11733          ;
-; Average fan-out                             ; 3.46           ;
+; Total fan-out                               ; 11714          ;
+; Average fan-out                             ; 3.44           ;
 +---------------------------------------------+----------------+
 
 
@@ -397,9 +398,9 @@ agreement for further details.
 +----------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+--------------+
 ; Compilation Hierarchy Node                                           ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                 ; Entity Name                     ; Library Name ;
 +----------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+--------------+
-; |DE1_SoC_TV                                                          ; 1422 (39)           ; 1286 (0)                  ; 45024             ; 10         ; 241  ; 0            ; |DE1_SoC_TV                                                                                                                                                                                                                         ; DE1_SoC_TV                      ; work         ;
+; |DE1_SoC_TV                                                          ; 1435 (39)           ; 1286 (0)                  ; 45024             ; 10         ; 241  ; 0            ; |DE1_SoC_TV                                                                                                                                                                                                                         ; DE1_SoC_TV                      ; work         ;
 ;    |AUDIO_DAC:u12|                                                   ; 15 (15)             ; 14 (14)                   ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_TV|AUDIO_DAC:u12                                                                                                                                                                                                           ; AUDIO_DAC                       ; work         ;
-;    |CHOSE_FILTR:ch|                                                  ; 45 (45)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_TV|CHOSE_FILTR:ch                                                                                                                                                                                                          ; CHOSE_FILTR                     ; work         ;
+;    |CHOSE_FILTR:ch|                                                  ; 76 (76)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_TV|CHOSE_FILTR:ch                                                                                                                                                                                                          ; CHOSE_FILTR                     ; work         ;
 ;    |DIV:u5|                                                          ; 19 (0)              ; 10 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_TV|DIV:u5                                                                                                                                                                                                                  ; DIV                             ; work         ;
 ;       |lpm_divide:LPM_DIVIDE_component|                              ; 19 (0)              ; 10 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_TV|DIV:u5|lpm_divide:LPM_DIVIDE_component                                                                                                                                                                                  ; lpm_divide                      ; work         ;
 ;          |lpm_divide_h3t:auto_generated|                             ; 19 (0)              ; 10 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_TV|DIV:u5|lpm_divide:LPM_DIVIDE_component|lpm_divide_h3t:auto_generated                                                                                                                                                    ; lpm_divide_h3t                  ; work         ;
@@ -486,7 +487,7 @@ agreement for further details.
 ;       |command:command1|                                             ; 55 (55)             ; 49 (49)                   ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_TV|Sdram_Control_4Port:u6|command:command1                                                                                                                                                                                 ; command                         ; work         ;
 ;       |control_interface:control1|                                   ; 75 (75)             ; 56 (56)                   ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_TV|Sdram_Control_4Port:u6|control_interface:control1                                                                                                                                                                       ; control_interface               ; work         ;
 ;    |TD_Detect:u2|                                                    ; 13 (13)             ; 11 (11)                   ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_TV|TD_Detect:u2                                                                                                                                                                                                            ; TD_Detect                       ; work         ;
-;    |VGA_Ctrl:u9|                                                     ; 356 (220)           ; 24 (24)                   ; 0                 ; 4          ; 0    ; 0            ; |DE1_SoC_TV|VGA_Ctrl:u9                                                                                                                                                                                                             ; VGA_Ctrl                        ; work         ;
+;    |VGA_Ctrl:u9|                                                     ; 338 (202)           ; 24 (24)                   ; 0                 ; 4          ; 0    ; 0            ; |DE1_SoC_TV|VGA_Ctrl:u9                                                                                                                                                                                                             ; VGA_Ctrl                        ; work         ;
 ;       |lpm_divide:Div0|                                              ; 136 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_TV|VGA_Ctrl:u9|lpm_divide:Div0                                                                                                                                                                                             ; lpm_divide                      ; work         ;
 ;          |lpm_divide_ibm:auto_generated|                             ; 136 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_TV|VGA_Ctrl:u9|lpm_divide:Div0|lpm_divide_ibm:auto_generated                                                                                                                                                               ; lpm_divide_ibm                  ; work         ;
 ;             |sign_div_unsign_olh:divider|                            ; 136 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_TV|VGA_Ctrl:u9|lpm_divide:Div0|lpm_divide_ibm:auto_generated|sign_div_unsign_olh:divider                                                                                                                                   ; sign_div_unsign_olh             ; work         ;
@@ -743,6 +744,46 @@ Encoding Type:  One-Hot
 ; Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|alt_synch_pipe_8pl:rs_dgwp|dffpipe_pe9:dffpipe13|dffe14a[1]  ; yes                                                              ; yes                                        ;
 ; Total number of protected registers is 120                                                                                                                      ;                                                                  ;                                            ;
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                        ;
++-----------------------------------------------------+-----------------------------+------------------------+
+; Latch Name                                          ; Latch Enable Signal         ; Free of Timing Hazards ;
++-----------------------------------------------------+-----------------------------+------------------------+
+; CHOSE_FILTR:ch|iBlue_temp[9]                        ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
+; CHOSE_FILTR:ch|iBlue_temp[8]                        ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
+; CHOSE_FILTR:ch|iBlue_temp[7]                        ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
+; CHOSE_FILTR:ch|iBlue_temp[6]                        ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
+; CHOSE_FILTR:ch|iBlue_temp[5]                        ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
+; CHOSE_FILTR:ch|iBlue_temp[4]                        ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
+; CHOSE_FILTR:ch|iBlue_temp[3]                        ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
+; CHOSE_FILTR:ch|iBlue_temp[2]                        ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
+; CHOSE_FILTR:ch|iBlue_temp[1]                        ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
+; CHOSE_FILTR:ch|iBlue_temp[0]                        ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
+; CHOSE_FILTR:ch|iGreen_temp[9]                       ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
+; CHOSE_FILTR:ch|iGreen_temp[8]                       ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
+; CHOSE_FILTR:ch|iGreen_temp[7]                       ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
+; CHOSE_FILTR:ch|iGreen_temp[6]                       ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
+; CHOSE_FILTR:ch|iGreen_temp[5]                       ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
+; CHOSE_FILTR:ch|iGreen_temp[4]                       ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
+; CHOSE_FILTR:ch|iGreen_temp[3]                       ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
+; CHOSE_FILTR:ch|iGreen_temp[2]                       ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
+; CHOSE_FILTR:ch|iGreen_temp[1]                       ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
+; CHOSE_FILTR:ch|iGreen_temp[0]                       ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
+; CHOSE_FILTR:ch|iRed_temp[9]                         ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
+; CHOSE_FILTR:ch|iRed_temp[8]                         ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
+; CHOSE_FILTR:ch|iRed_temp[7]                         ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
+; CHOSE_FILTR:ch|iRed_temp[6]                         ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
+; CHOSE_FILTR:ch|iRed_temp[5]                         ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
+; CHOSE_FILTR:ch|iRed_temp[4]                         ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
+; CHOSE_FILTR:ch|iRed_temp[3]                         ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
+; CHOSE_FILTR:ch|iRed_temp[2]                         ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
+; CHOSE_FILTR:ch|iRed_temp[1]                         ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
+; CHOSE_FILTR:ch|iRed_temp[0]                         ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
+; Number of user-specified and inferred latches = 30  ;                             ;                        ;
++-----------------------------------------------------+-----------------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -1675,36 +1716,36 @@ Encoding Type:  One-Hot
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                             ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------+
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |DE1_SoC_TV|Sdram_Control_4Port:u6|command:command1|BA[0]              ;
-; 3:1                ; 15 bits   ; 30 LEs        ; 15 LEs               ; 15 LEs                 ; Yes        ; |DE1_SoC_TV|Sdram_Control_4Port:u6|control_interface:control1|timer[1] ;
+; 3:1                ; 15 bits   ; 30 LEs        ; 15 LEs               ; 15 LEs                 ; Yes        ; |DE1_SoC_TV|Sdram_Control_4Port:u6|control_interface:control1|timer[6] ;
 ; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |DE1_SoC_TV|Sdram_Control_4Port:u6|command:command1|command_delay[3]   ;
-; 3:1                ; 18 bits   ; 36 LEs        ; 0 LEs                ; 36 LEs                 ; Yes        ; |DE1_SoC_TV|ITU_656_Decoder:u4|Cont[1]                                 ;
-; 4:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |DE1_SoC_TV|Sdram_Control_4Port:u6|command:command1|SA[8]              ;
-; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |DE1_SoC_TV|Sdram_Control_4Port:u6|mADDR[7]                            ;
-; 4:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |DE1_SoC_TV|YCbCr2RGB:u8|oBlue[2]                                      ;
-; 4:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |DE1_SoC_TV|YCbCr2RGB:u8|oGreen[2]                                     ;
-; 4:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |DE1_SoC_TV|YCbCr2RGB:u8|oRed[8]                                       ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |DE1_SoC_TV|Sdram_Control_4Port:u6|command:command1|rp_shift[1]        ;
-; 4:1                ; 16 bits   ; 32 LEs        ; 0 LEs                ; 32 LEs                 ; Yes        ; |DE1_SoC_TV|Sdram_Control_4Port:u6|rWR1_ADDR[15]                       ;
-; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; Yes        ; |DE1_SoC_TV|Sdram_Control_4Port:u6|rRD2_ADDR[20]                       ;
-; 4:1                ; 10 bits   ; 20 LEs        ; 0 LEs                ; 20 LEs                 ; Yes        ; |DE1_SoC_TV|Sdram_Control_4Port:u6|rRD1_ADDR[21]                       ;
-; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |DE1_SoC_TV|Sdram_Control_4Port:u6|mWR                                 ;
-; 6:1                ; 3 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |DE1_SoC_TV|Sdram_Control_4Port:u6|mRD                                 ;
-; 8:1                ; 8 bits    ; 40 LEs        ; 8 LEs                ; 32 LEs                 ; Yes        ; |DE1_SoC_TV|ITU_656_Decoder:u4|YCbCr[6]                                ;
-; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |DE1_SoC_TV|Sdram_Control_4Port:u6|CMD[1]                              ;
-; 7:1                ; 10 bits   ; 40 LEs        ; 20 LEs               ; 20 LEs                 ; Yes        ; |DE1_SoC_TV|Sdram_Control_4Port:u6|ST[9]                               ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |DE1_SoC_TV|I2C_AV_Config:u1|I2C_Controller:u0|SD_COUNTER[1]           ;
-; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |DE1_SoC_TV|Sdram_Control_4Port:u6|rRD2_ADDR[8]                        ;
+; 3:1                ; 18 bits   ; 36 LEs        ; 0 LEs                ; 36 LEs                 ; Yes        ; |DE1_SoC_TV|ITU_656_Decoder:u4|Cont[16]                                ;
+; 4:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |DE1_SoC_TV|Sdram_Control_4Port:u6|command:command1|SA[4]              ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |DE1_SoC_TV|Sdram_Control_4Port:u6|mADDR[13]                           ;
+; 4:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |DE1_SoC_TV|YCbCr2RGB:u8|oBlue[4]                                      ;
+; 4:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |DE1_SoC_TV|YCbCr2RGB:u8|oGreen[9]                                     ;
+; 4:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |DE1_SoC_TV|YCbCr2RGB:u8|oRed[5]                                       ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |DE1_SoC_TV|Sdram_Control_4Port:u6|command:command1|rp_shift[0]        ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 0 LEs                ; 32 LEs                 ; Yes        ; |DE1_SoC_TV|Sdram_Control_4Port:u6|rWR1_ADDR[16]                       ;
+; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; Yes        ; |DE1_SoC_TV|Sdram_Control_4Port:u6|rRD2_ADDR[13]                       ;
+; 4:1                ; 10 bits   ; 20 LEs        ; 0 LEs                ; 20 LEs                 ; Yes        ; |DE1_SoC_TV|Sdram_Control_4Port:u6|rRD1_ADDR[20]                       ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |DE1_SoC_TV|Sdram_Control_4Port:u6|WR_MASK[0]                          ;
+; 6:1                ; 3 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |DE1_SoC_TV|Sdram_Control_4Port:u6|RD_MASK[1]                          ;
+; 8:1                ; 8 bits    ; 40 LEs        ; 8 LEs                ; 32 LEs                 ; Yes        ; |DE1_SoC_TV|ITU_656_Decoder:u4|YCbCr[4]                                ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |DE1_SoC_TV|Sdram_Control_4Port:u6|CMD[0]                              ;
+; 7:1                ; 10 bits   ; 40 LEs        ; 20 LEs               ; 20 LEs                 ; Yes        ; |DE1_SoC_TV|Sdram_Control_4Port:u6|ST[3]                               ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |DE1_SoC_TV|I2C_AV_Config:u1|I2C_Controller:u0|SD_COUNTER[5]           ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |DE1_SoC_TV|Sdram_Control_4Port:u6|rRD2_ADDR[17]                       ;
 ; 4:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |DE1_SoC_TV|Sdram_Control_4Port:u6|rRD2_ADDR[12]                       ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |DE1_SoC_TV|Sdram_Control_4Port:u6|rRD1_ADDR[9]                        ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |DE1_SoC_TV|Sdram_Control_4Port:u6|rRD1_ADDR[8]                        ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |DE1_SoC_TV|VGA_Ctrl:u9|mnoznik1                                       ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |DE1_SoC_TV|VGA_Ctrl:u9|mnoznik2                                       ;
-; 7:1                ; 10 bits   ; 40 LEs        ; 20 LEs               ; 20 LEs                 ; No         ; |DE1_SoC_TV|CHOSE_FILTR:ch|iBlue_temp[5]                               ;
-; 7:1                ; 10 bits   ; 40 LEs        ; 30 LEs               ; 10 LEs                 ; No         ; |DE1_SoC_TV|CHOSE_FILTR:ch|iRed_temp[5]                                ;
+; 7:1                ; 10 bits   ; 40 LEs        ; 20 LEs               ; 20 LEs                 ; No         ; |DE1_SoC_TV|CHOSE_FILTR:ch|iBlue_temp[4]                               ;
+; 7:1                ; 10 bits   ; 40 LEs        ; 30 LEs               ; 10 LEs                 ; No         ; |DE1_SoC_TV|CHOSE_FILTR:ch|iRed_temp[0]                                ;
 ; 8:1                ; 3 bits    ; 15 LEs        ; 12 LEs               ; 3 LEs                  ; No         ; |DE1_SoC_TV|VGA_Ctrl:u9|oVGA_R_temp[4]                                 ;
-; 8:1                ; 2 bits    ; 10 LEs        ; 8 LEs                ; 2 LEs                  ; No         ; |DE1_SoC_TV|VGA_Ctrl:u9|oVGA_R_temp[5]                                 ;
+; 8:1                ; 2 bits    ; 10 LEs        ; 8 LEs                ; 2 LEs                  ; No         ; |DE1_SoC_TV|VGA_Ctrl:u9|oVGA_R_temp[6]                                 ;
 ; 9:1                ; 2 bits    ; 12 LEs        ; 10 LEs               ; 2 LEs                  ; No         ; |DE1_SoC_TV|VGA_Ctrl:u9|oVGA_B_temp[5]                                 ;
-; 10:1               ; 3 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; No         ; |DE1_SoC_TV|VGA_Ctrl:u9|oVGA_B_temp[3]                                 ;
-; 11:1               ; 5 bits    ; 35 LEs        ; 30 LEs               ; 5 LEs                  ; No         ; |DE1_SoC_TV|VGA_Ctrl:u9|oVGA_G_temp[6]                                 ;
+; 10:1               ; 3 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; No         ; |DE1_SoC_TV|VGA_Ctrl:u9|oVGA_B_temp[2]                                 ;
+; 11:1               ; 5 bits    ; 35 LEs        ; 30 LEs               ; 5 LEs                  ; No         ; |DE1_SoC_TV|VGA_Ctrl:u9|oVGA_G_temp[4]                                 ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------+
 
 
@@ -5722,7 +5763,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     SLD               ; 4                           ;
 ;     plain             ; 28                          ;
 ; arriav_io_obuf        ; 96                          ;
-; arriav_lcell_comb     ; 1429                        ;
+; arriav_lcell_comb     ; 1442                        ;
 ;     arith             ; 413                         ;
 ;         0 data inputs ; 30                          ;
 ;         1 data inputs ; 295                         ;
@@ -5730,16 +5771,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;         3 data inputs ; 12                          ;
 ;         4 data inputs ; 40                          ;
 ;         5 data inputs ; 5                           ;
-;     extend            ; 3                           ;
-;         7 data inputs ; 3                           ;
-;     normal            ; 961                         ;
+;     extend            ; 1                           ;
+;         7 data inputs ; 1                           ;
+;     normal            ; 976                         ;
 ;         0 data inputs ; 2                           ;
 ;         1 data inputs ; 35                          ;
-;         2 data inputs ; 156                         ;
-;         3 data inputs ; 141                         ;
-;         4 data inputs ; 144                         ;
-;         5 data inputs ; 167                         ;
-;         6 data inputs ; 316                         ;
+;         2 data inputs ; 155                         ;
+;         3 data inputs ; 171                         ;
+;         4 data inputs ; 142                         ;
+;         5 data inputs ; 180                         ;
+;         6 data inputs ; 291                         ;
 ;     shared            ; 52                          ;
 ;         0 data inputs ; 4                           ;
 ;         1 data inputs ; 2                           ;
@@ -5751,7 +5792,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; stratixv_ram_block    ; 96                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 23.50                       ;
-; Average LUT depth     ; 3.75                        ;
+; Average LUT depth     ; 3.68                        ;
 +-----------------------+-----------------------------+
 
 
@@ -5770,7 +5811,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.2 Build 602 07/19/2017 SJ Lite Edition
-    Info: Processing started: Tue Apr 17 13:25:48 2018
+    Info: Processing started: Tue May  8 12:30:29 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DE1_SoC_TV -c DE1_SoC_TV
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -6706,36 +6747,6 @@ Info (12128): Elaborating entity "I2C_Controller" for hierarchy "I2C_AV_Config:u
 Warning (10230): Verilog HDL assignment warning at I2C_Controller.v(78): truncated value with size 32 to match size of target (1) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/I2C_Controller.v Line: 78
 Warning (10230): Verilog HDL assignment warning at I2C_Controller.v(77): truncated value with size 32 to match size of target (1) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/I2C_Controller.v Line: 77
 Warning (10230): Verilog HDL assignment warning at I2C_Controller.v(90): truncated value with size 32 to match size of target (6) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/I2C_Controller.v Line: 90
-Warning (14026): LATCH primitive "CHOSE_FILTR:ch|iBlue_temp[2]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Warning (14026): LATCH primitive "CHOSE_FILTR:ch|iBlue_temp[5]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Warning (14026): LATCH primitive "CHOSE_FILTR:ch|iBlue_temp[4]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Warning (14026): LATCH primitive "CHOSE_FILTR:ch|iBlue_temp[3]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Warning (14026): LATCH primitive "CHOSE_FILTR:ch|iBlue_temp[9]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Warning (14026): LATCH primitive "CHOSE_FILTR:ch|iBlue_temp[8]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Warning (14026): LATCH primitive "CHOSE_FILTR:ch|iBlue_temp[7]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Warning (14026): LATCH primitive "CHOSE_FILTR:ch|iBlue_temp[6]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Warning (14026): LATCH primitive "CHOSE_FILTR:ch|iBlue_temp[1]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Warning (14026): LATCH primitive "CHOSE_FILTR:ch|iBlue_temp[0]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Warning (14026): LATCH primitive "CHOSE_FILTR:ch|iGreen_temp[2]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Warning (14026): LATCH primitive "CHOSE_FILTR:ch|iGreen_temp[5]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Warning (14026): LATCH primitive "CHOSE_FILTR:ch|iGreen_temp[4]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Warning (14026): LATCH primitive "CHOSE_FILTR:ch|iGreen_temp[3]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Warning (14026): LATCH primitive "CHOSE_FILTR:ch|iGreen_temp[9]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Warning (14026): LATCH primitive "CHOSE_FILTR:ch|iGreen_temp[8]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Warning (14026): LATCH primitive "CHOSE_FILTR:ch|iGreen_temp[7]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Warning (14026): LATCH primitive "CHOSE_FILTR:ch|iGreen_temp[6]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Warning (14026): LATCH primitive "CHOSE_FILTR:ch|iGreen_temp[1]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Warning (14026): LATCH primitive "CHOSE_FILTR:ch|iGreen_temp[0]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Warning (14026): LATCH primitive "CHOSE_FILTR:ch|iRed_temp[2]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Warning (14026): LATCH primitive "CHOSE_FILTR:ch|iRed_temp[5]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Warning (14026): LATCH primitive "CHOSE_FILTR:ch|iRed_temp[4]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Warning (14026): LATCH primitive "CHOSE_FILTR:ch|iRed_temp[3]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Warning (14026): LATCH primitive "CHOSE_FILTR:ch|iRed_temp[9]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Warning (14026): LATCH primitive "CHOSE_FILTR:ch|iRed_temp[8]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Warning (14026): LATCH primitive "CHOSE_FILTR:ch|iRed_temp[7]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Warning (14026): LATCH primitive "CHOSE_FILTR:ch|iRed_temp[6]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Warning (14026): LATCH primitive "CHOSE_FILTR:ch|iRed_temp[1]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Warning (14026): LATCH primitive "CHOSE_FILTR:ch|iRed_temp[0]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
 Warning (14026): LATCH primitive "VGA_Ctrl:u9|oVGA_B_temp[2]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 149
 Warning (14026): LATCH primitive "VGA_Ctrl:u9|oVGA_B_temp[3]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 149
 Warning (14026): LATCH primitive "VGA_Ctrl:u9|oVGA_B_temp[4]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 149
@@ -6857,6 +6868,66 @@ Warning (13039): The following bidirectional pins have no drivers
     Warning (13040): bidirectional pin "PS2_DAT2" has no driver File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 177
 Info (13060): One or more bidirectional pins are fed by always enabled tri-state buffers
     Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "AUD_DACLRCK" is moved to its source File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 49
+Warning (13012): Latch CHOSE_FILTR:ch|iBlue_temp[9] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
+Warning (13012): Latch CHOSE_FILTR:ch|iBlue_temp[8] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
+Warning (13012): Latch CHOSE_FILTR:ch|iBlue_temp[7] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
+Warning (13012): Latch CHOSE_FILTR:ch|iBlue_temp[6] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
+Warning (13012): Latch CHOSE_FILTR:ch|iBlue_temp[5] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
+Warning (13012): Latch CHOSE_FILTR:ch|iBlue_temp[4] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
+Warning (13012): Latch CHOSE_FILTR:ch|iBlue_temp[3] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
+Warning (13012): Latch CHOSE_FILTR:ch|iBlue_temp[2] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
+Warning (13012): Latch CHOSE_FILTR:ch|iBlue_temp[1] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
+Warning (13012): Latch CHOSE_FILTR:ch|iBlue_temp[0] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
+Warning (13012): Latch CHOSE_FILTR:ch|iGreen_temp[9] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
+Warning (13012): Latch CHOSE_FILTR:ch|iGreen_temp[8] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
+Warning (13012): Latch CHOSE_FILTR:ch|iGreen_temp[7] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
+Warning (13012): Latch CHOSE_FILTR:ch|iGreen_temp[6] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
+Warning (13012): Latch CHOSE_FILTR:ch|iGreen_temp[5] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
+Warning (13012): Latch CHOSE_FILTR:ch|iGreen_temp[4] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
+Warning (13012): Latch CHOSE_FILTR:ch|iGreen_temp[3] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
+Warning (13012): Latch CHOSE_FILTR:ch|iGreen_temp[2] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
+Warning (13012): Latch CHOSE_FILTR:ch|iGreen_temp[1] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
+Warning (13012): Latch CHOSE_FILTR:ch|iGreen_temp[0] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
+Warning (13012): Latch CHOSE_FILTR:ch|iRed_temp[9] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
+Warning (13012): Latch CHOSE_FILTR:ch|iRed_temp[8] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
+Warning (13012): Latch CHOSE_FILTR:ch|iRed_temp[7] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
+Warning (13012): Latch CHOSE_FILTR:ch|iRed_temp[6] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
+Warning (13012): Latch CHOSE_FILTR:ch|iRed_temp[5] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
+Warning (13012): Latch CHOSE_FILTR:ch|iRed_temp[4] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
+Warning (13012): Latch CHOSE_FILTR:ch|iRed_temp[3] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
+Warning (13012): Latch CHOSE_FILTR:ch|iRed_temp[2] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
+Warning (13012): Latch CHOSE_FILTR:ch|iRed_temp[1] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
+Warning (13012): Latch CHOSE_FILTR:ch|iRed_temp[0] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
 Info (13000): Registers with preset signals will power-up high File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/Sdram_Control_4Port/Sdram_Control_4Port.v Line: 414
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
@@ -6954,18 +7025,18 @@ Warning (21074): Design contains 9 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "KEY[1]" File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 168
     Warning (15610): No output dependent on input pin "KEY[2]" File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 168
     Warning (15610): No output dependent on input pin "KEY[3]" File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 168
-Info (21057): Implemented 2480 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 2493 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 32 input pins
     Info (21059): Implemented 113 output pins
     Info (21060): Implemented 96 bidirectional pins
-    Info (21061): Implemented 2130 logic cells
+    Info (21061): Implemented 2143 logic cells
     Info (21064): Implemented 96 RAM segments
     Info (21065): Implemented 3 PLLs
     Info (21062): Implemented 10 DSP elements
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 292 warnings
-    Info: Peak virtual memory: 1280 megabytes
-    Info: Processing ended: Tue Apr 17 13:26:08 2018
-    Info: Elapsed time: 00:00:20
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 322 warnings
+    Info: Peak virtual memory: 1279 megabytes
+    Info: Processing ended: Tue May  8 12:30:53 2018
+    Info: Elapsed time: 00:00:24
     Info: Total CPU time (on all processors): 00:00:29
 
 

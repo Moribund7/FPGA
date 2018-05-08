@@ -89,7 +89,7 @@ reg		[9:0]	oVGA_B_temp;
 
 integer mnoznik1;
 integer mnoznik2;
-/////////////////////////////////TO DO: wymyślić co można chcieć wyświetlać na różnych ekranach i  jak je sterwać. Sprawdzić możliwosci !!!!!
+//////////////////////
 
 
 ///////////////////////////////////////Wyświetla fragment obrazu na w różnej jasności
