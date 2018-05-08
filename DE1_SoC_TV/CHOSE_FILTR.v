@@ -124,7 +124,7 @@ end
 end
 	
 
-				if(SW[9]==0 && SW[8]==0)begin 										//Przekierowanie obrazu bez filtrów
+				if((SW[9]==0 && SW[8]==0)|| (SW[9]==1&& SW[8]==1))begin 										//Przekierowanie obrazu bez filtrów
 				iRed_temp	  =	iRed;
 				iBlue_temp	  =	iBlue;
 				iGreen_temp    =	iGreen;

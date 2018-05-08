@@ -89,12 +89,13 @@ reg		[9:0]	oVGA_B_temp;
 
 integer mnoznik1;
 integer mnoznik2;
+integer dzielnik;
 //////////////////////
 
 
 ///////////////////////////////////////Wyświetla fragment obrazu na w różnej jasności
 always @ * begin
-	if(SW[7]==0&& SW[6]==0)begin
+	if(SW[7]==0&& SW[6]==0 && SW[8]==0 && SW[9]==0)begin
 		oVGA_G_temp		=	iGreen;
 		oVGA_B_temp		=	iBlue;
 		oVGA_R_temp		=	iRed;
@@ -188,6 +189,64 @@ always @ * begin
 					 0;
 		end
 	
+	
+	///////////////////////////////////////Tutaj jest brzydko rozwiązane urzycie przełaczników. Przy wersji nie testowej warto to jakoś zunifikować
+	
+	
+	
+	if (SW[9]==1&&SW[8]==1)begin
+	
+	mnoznik1=(SW[2:0]==1) ? 1 :
+					(SW[2:0]==2) ? 2 :
+					(SW[2:0]==3) ? 3 :
+					(SW[2:0]==4) ? 4 :
+					(SW[2:0]==5) ? 5 :
+					(SW[2:0]==6) ? 6 :
+					(SW[2:0]==7) ? 7 :
+					0;
+		mnoznik2=(SW[5:3]==1) ? 1 :
+					(SW[5:3]==2) ? 2 :
+					(SW[5:3]==3) ? 3 :
+					(SW[5:3]==4) ? 4 :
+					(SW[5:3]==5) ? 5 :
+					(SW[5:3]==6) ? 6 :
+					(SW[5:3]==7) ? 7 :
+					0;	
+					
+			dzielnik=3; /////////////////////////////TODO: działa rozpoznawanie kolorów, można sprawdzić kilka wartości np kolor czlowieka to sw2 sw3
+	
+		oVGA_G_temp		=	(H_Cont<=H_HALF && V_Cont<=V_HALF) ?   iGreen :      //lewy górny  dobre parametry to 480,270
+					 (H_Cont>H_HALF && V_Cont<=V_HALF && oVGA_R_temp>0) ?   iGreen :				 //prawy górny
+					 (H_Cont<=H_HALF && V_Cont>V_HALF&& oVGA_B_temp>0) ?   iGreen :	     //lewy dolny
+					 
+					 (H_Cont>H_HALF && V_Cont>V_HALF && iGreen>=(mnoznik1*iBlue+mnoznik2*iRed)/(dzielnik)) ?    iGreen : //!!!!!!!!!!!!!!!!
+					 (H_Cont>H_HALF && V_Cont>V_HALF && iGreen<(mnoznik1*iBlue+mnoznik2*iRed)/(dzielnik)) ? 0 :
+					
+					  0;
+		oVGA_B_temp		=	(H_Cont<=H_HALF && V_Cont<=V_HALF) ?   iBlue :      //lewy górny  dobre parametry to 480,270
+					 (H_Cont>H_HALF && V_Cont<=V_HALF&& oVGA_R_temp>0) ?   iBlue :				 //prawy górny
+					 
+					 (H_Cont<=H_HALF && V_Cont>V_HALF&& iBlue>=(mnoznik1*iGreen+mnoznik2*iRed)/(dzielnik)) ?   iBlue:                   //lewy dolny
+					 (H_Cont<=H_HALF && V_Cont>V_HALF&& iBlue<(mnoznik1*iGreen+mnoznik2*iRed)/(dzielnik)) ?   0:
+					 
+					 (H_Cont>H_HALF && V_Cont>V_HALF && oVGA_G_temp>0) ?    iBlue:
+							0;
+							
+		oVGA_R_temp		= (H_Cont<=H_HALF && V_Cont<=V_HALF) ?   iRed :      //lewy górny  dobre parametry to 480,270
+					 (H_Cont>H_HALF && V_Cont<=V_HALF && iRed>=(mnoznik1*iBlue+mnoznik2*iGreen)/(dzielnik)) ?   iRed :				 //prawy górny
+					 (H_Cont>H_HALF && V_Cont<=V_HALF && iRed<(mnoznik1*iBlue+mnoznik2*iGreen)/(dzielnik)) ?   0:
+					 
+					 (H_Cont<=H_HALF && V_Cont>V_HALF && oVGA_B_temp>0) ?    iRed:	     //lewy dolny
+					 (H_Cont>H_HALF && V_Cont>V_HALF && oVGA_G_temp>0) ?    iRed:
+					 
+					 0;
+		end
+	
+	
+	
+	
+	
+	////////////kod testowy
 	
 	
 	
