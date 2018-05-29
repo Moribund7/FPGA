@@ -1,0 +1,68 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Przetwarzanie obrazu w czasie rzeczywistym}
+\author{Filip Kowalski}
+\date{29 Maja 2018}
+
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{polski}
+\usepackage{url}
+
+\newcommand{\tylda }{{\raise.17ex\hbox{$\scriptstyle\sim$}}}
+
+\begin{document}
+
+\maketitle
+
+\section*{Wprowadzenie}
+Celem projektu było przetestowanie możliwości układu Cyclone V do przetwarzania obrazu w czasie rzeczywistym. W tym celu wykorzystano w/w układ oraz kamerę ,,KELIMA SQ10 Mini 1080P HD DVR'' (dzieło chińskich rączek -- zakupiona na portalu gearbest.com za \tylda 5 \$). W projekcie wykorzystano przykład pochodzący z dokumentacji układu -- link do pakietu \cite{przyklad}. Kamera była podpinana do wejścia VIDEO\_IN a następnie wyświetlana na monitorze przy pomocy wyjścia VGA. 
+
+\section*{Realizacja}
+Kod pochodzący z przykładów z dokumentacji został tak zmodyfikowany, aby sprawdzić różne sposoby obróbki obrazu. W tym celu stworzono kilka filtrów, wybieranych  przy pomocy przełączników SW[9:6], i których parametry można ustawić przy pomocy pozostałych przełączników. Poniżej zamieszczono instrukcję opisującą sposób uruchamiania danego filtra (układ przełączników jakie należy ustawić), sposób jego działania oraz parametry jakie przyjmuje.
+
+\section*{Instrukcja obsługi}
+\begin{itemize}
+    
+
+\item SW[9] and SW[8]
+ wykrywanie kolorów określonych przy pomocy trzech parametrów: dzielnik - int ustalany przy kompilacji pliku( ze względu
+na zbyt małą liczbę przełączników do ustalania parametrów) oraz dwa inty przy pomocy SW[5-3] drugi SW[2-0] - kontrolują kolory,
+Przykładowe ustawienia: 
+--dzielnik=3,SW[3],SW[2] ustawienie wykrywania koloru człowieka
+
+
+\item SW[9] and $\neg$SW[8] zamienia kolory parami przy pomocy przełączników 2-0
+
+
+\item SW[8] and $\neg$W[9] 
+ustawia kolejne kombinacje kolorów (wszystkich jest 27): na każdy z trzech kolorów na wyjściu ustawiamy jeden z trzech kolorów na wejściu. Kolejne kombinacje wywołuje się przy pomocy ustawienia odpowiedniej wartości za pomocą przełączników 4-0
+
+
+\item SW[7] and $\neg$SW[6]
+wyświetla cztery obrazy każdy z inną jasnością
+
+
+\item $\neg$SW[7] and SW[6]
+wyświetla cztery obrazy każdy bez jednego podstawowego koloru
+
+
+\item SW[7] and SW[6]
+wyświetla cztery obrazy -- w każdym wybiera filtrowany  kolor, ustawiony przy pomocy przełączników SW[5-0], a następnie wycina wszystkie inne kolory poza tym wybranym. Wybrany w ten sposób kolor jest wyświetlany nie za pomocą swojego rzeczywistego koloru tylko jako jeden z trzech podstawowych kolorów RGB
+
+\end{itemize}
+
+
+
+\begin{thebibliography}{1}
+
+  \bibitem{przyklad} 
+  \url{http://www.fuw.edu.pl/~pablo/fpga/get.php?file=laboratorium/de1soc/docs/de1-soc/Demonstrations/FPGA/DE1_SoC_TV.zip}
+
+ 
+
+  \end{thebibliography}
+
+ 
+\end{document}
