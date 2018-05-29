@@ -1,5 +1,5 @@
 Flow report for DE1_SoC_TV
-Tue May 29 12:39:52 2018
+Tue May 29 13:51:50 2018
 Quartus Prime Version 17.0.2 Build 602 07/19/2017 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Tue May 29 12:39:40 2018       ;
+; Flow Status                     ; Successful - Tue May 29 13:51:38 2018       ;
 ; Quartus Prime Version           ; 17.0.2 Build 602 07/19/2017 SJ Lite Edition ;
 ; Revision Name                   ; DE1_SoC_TV                                  ;
 ; Top-level Entity Name           ; DE1_SoC_TV                                  ;
@@ -68,7 +68,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/29/2018 12:38:11 ;
+; Start date & time ; 05/29/2018 13:50:08 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; DE1_SoC_TV          ;
 +-------------------+---------------------+
@@ -79,7 +79,7 @@ agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 88398801442758.152759029007254         ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 88398801442758.152759460811154         ; --            ; --          ; --         ;
 ; ECO_REGENERATE_REPORT               ; On                                     ; Off           ; --          ; --         ;
 ; FITTER_EFFORT                       ; Standard Fit                           ; Auto Fit      ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
@@ -105,11 +105,11 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:18     ; 1.0                     ; 1227 MB             ; 00:00:28                           ;
-; Fitter                    ; 00:01:00     ; 1.1                     ; 2668 MB             ; 00:01:45                           ;
-; Assembler                 ; 00:00:07     ; 1.0                     ; 1105 MB             ; 00:00:06                           ;
-; TimeQuest Timing Analyzer ; 00:00:11     ; 1.5                     ; 1411 MB             ; 00:00:14                           ;
-; Total                     ; 00:01:36     ; --                      ; --                  ; 00:02:33                           ;
+; Analysis & Synthesis      ; 00:00:18     ; 1.0                     ; 1234 MB             ; 00:00:28                           ;
+; Fitter                    ; 00:01:00     ; 1.1                     ; 2677 MB             ; 00:01:44                           ;
+; Assembler                 ; 00:00:07     ; 1.0                     ; 1102 MB             ; 00:00:06                           ;
+; TimeQuest Timing Analyzer ; 00:00:11     ; 1.5                     ; 1416 MB             ; 00:00:14                           ;
+; Total                     ; 00:01:36     ; --                      ; --                  ; 00:02:32                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
