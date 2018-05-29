@@ -25,10 +25,8 @@ reg	[9:0]	iBlue_temp;
 reg   [9:0] iGreen_temp;
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //
-//																	POMYSŁ - dokończyćdziałanie filtra 2,            
-//																	wymiana kolejnych par kolorów ze sobą
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-always begin
+always begin /////////////////////////////////////TO DO: TO NIE DZIAŁA!!!! FILTRY SIE NIE WYSWIETLAJA NAPRAWAIC
 					
 																		
 if(SW[9]==1 && SW[8]==0)begin                                    //jakiś randomowy filtr
@@ -66,65 +64,232 @@ if(SW[2]) begin
 	end
 			
 			
-	if(SW[8]==1 && SW[9]==0)begin      //zamienianie kolejnych kolorów ze sobą
-
-iRed_temp	  =	iRed;
-iBlue_temp	  =	iBlue;
-iGreen_temp    =	iGreen;
+	if(SW[8]==1 && SW[9]==0)begin      //ustawia kolejne kombinacje kolorów (wszystkich jest 27), na każdy z trzech
+												  //kolorów na wyjściu ustawiamy jeden z trzech kolorów na wejściu 
 
 																							
 if(SW[2:0]==0)begin
 
-	iRed_temp	  =	iRed_temp;
-	iBlue_temp	  =	iBlue_temp;
-	iGreen_temp    =	iGreen_temp;
+	iRed_temp	  =	iRed;
+	iBlue_temp	  =	iBlue;
+	iGreen_temp    =	iGreen;
 	
 				end
 
 if(SW[2:0]==1)begin
 	
-	iRed_temp	  =	iRed_temp;
-	iBlue_temp	  =	iGreen_temp;
-	iGreen_temp    =	iBlue_temp;
+	iRed_temp	  =	iRed;
+	iBlue_temp	  =	iGreen;
+	iGreen_temp    =	iBlue;
 	end
 
 if(SW[2:0]==2) begin
 	
-	iRed_temp	  =	iBlue_temp;
-	iBlue_temp	  =	iRed_temp;
-	iGreen_temp    =	iGreen_temp;
+	iRed_temp	  =	iBlue;
+	iBlue_temp	  =	iRed;
+	iGreen_temp    =	iGreen;
 
 end
 
 if(SW[2:0]==3) begin
 	
-	iRed_temp	  =	iBlue_temp;
-	iBlue_temp	  =	iGreen_temp;
-	iGreen_temp    =	iRed_temp;
+	iRed_temp	  =	iBlue;
+	iBlue_temp	  =	iGreen;
+	iGreen_temp    =	iRed;
 
 end 	 	
 
 if(SW[2:0]==4) begin
 	
-	iRed_temp	  =	iGreen_temp;
-	iBlue_temp	  =	iRed_temp;
-	iGreen_temp    =	iBlue_temp;
+	iRed_temp	  =	iGreen;
+	iBlue_temp	  =	iRed;
+	iGreen_temp    =	iBlue;
 
 end 	 
 
 if(SW[2:0]==5) begin
 	
-	iRed_temp	  =	iGreen_temp;
-	iBlue_temp	  =	iBlue_temp;
-	iGreen_temp    =	iRed_temp;
+	iRed_temp	  =	iGreen;
+	iBlue_temp	  =	iBlue;
+	iGreen_temp    =	iRed;
 
 end 	 
 
+if(SW[4:0]==6) begin
+	
+	iRed_temp	  =	iRed;
+	iBlue_temp	  =	iBlue;
+	iGreen_temp    =	iRed;
+
+end 	
+
+if(SW[4:0]==7) begin
+	
+	iRed_temp	  =	iRed;
+	iBlue_temp	  =	iGreen;
+	iGreen_temp    =	iRed;
+
+end 
+
+if(SW[4:0]==8) begin
+	
+	iRed_temp	  =	iRed;
+	iBlue_temp	  =	iRed;
+	iGreen_temp    =	iBlue;
+
+end 
+
+ if(SW[4:0]==9) begin
+	
+	iRed_temp	  =	iRed;
+	iBlue_temp	  =	iRed;
+	iGreen_temp    =	iGreen;
+
+end 
+
+if(SW[4:0]==10) begin
+	
+	iRed_temp	  =	iBlue;
+	iBlue_temp	  =	iRed;
+	iGreen_temp    =	iRed;
+
+end 
+
+if(SW[4:0]==11) begin
+	
+	iRed_temp	  =	iGreen;
+	iBlue_temp	  =	iRed;
+	iGreen_temp    =	iRed;
+
+end 
+
+
+
+if(SW[4:0]==12) begin
+	
+	iRed_temp	  =	iGreen;
+	iBlue_temp	  =	iBlue;
+	iGreen_temp    =	iGreen;
+
+end 	
+
+if(SW[4:0]==13) begin
+	
+	iRed_temp	  =	iGreen;
+	iBlue_temp	  =	iRed;
+	iGreen_temp    =	iGreen;
+
+end 
+
+if(SW[4:0]==14) begin
+	
+	iRed_temp	  =	iGreen;
+	iBlue_temp	  =	iGreen;
+	iGreen_temp    =	iBlue;
+
+end 
+
+ if(SW[4:0]==15) begin
+	
+	iRed_temp	  =	iGreen;
+	iBlue_temp	  =	iGreen;
+	iGreen_temp    =	iRed;
+
+end 
+
+if(SW[4:0]==16) begin
+	
+	iRed_temp	  =	iBlue;
+	iBlue_temp	  =	iGreen;
+	iGreen_temp    =	iGreen;
+
+end 
+
+if(SW[4:0]==17) begin
+	
+	iRed_temp	  =	iRed;
+	iBlue_temp	  =	iGreen;
+	iGreen_temp    =	iGreen;
+
+end 
+
+
+if(SW[4:0]==18) begin
+	
+	iRed_temp	  =	iBlue;
+	iBlue_temp	  =	iGreen;
+	iGreen_temp    =	iBlue;
+
+end 	
+
+if(SW[4:0]==19) begin
+	
+	iRed_temp	  =	iBlue;
+	iBlue_temp	  =	iRed;
+	iGreen_temp    =	iBlue;
+
+end 
+
+if(SW[4:0]==20) begin
+	
+	iRed_temp	  =	iBlue;
+	iBlue_temp	  =	iBlue;
+	iGreen_temp    =	iGreen;
+
+end 
+
+ if(SW[4:0]==21) begin
+	
+	iRed_temp	  =	iBlue;
+	iBlue_temp	  =	iBlue;
+	iGreen_temp    =	iRed;
+
+end 
+
+if(SW[4:0]==22) begin
+	
+	iRed_temp	  =	iGreen;
+	iBlue_temp	  =	iBlue;
+	iGreen_temp    =	iBlue;
+
+end 
+
+if(SW[4:0]==23) begin
+	
+	iRed_temp	  =	iRed;
+	iBlue_temp	  =	iBlue;
+	iGreen_temp    =	iBlue;
+
+end 
+
+if(SW[4:0]==24) begin
+	
+	iRed_temp	  =	iRed;
+	iBlue_temp	  =	iRed;
+	iGreen_temp    =	iRed;
+
+end 
+
+if(SW[4:0]==25) begin
+	
+	iRed_temp	  =	iBlue;
+	iBlue_temp	  =	iBlue;
+	iGreen_temp    =	iBlue;
+
+end 
+
+if(SW[4:0]==26) begin
+	
+	iRed_temp	  =	iGreen;
+	iBlue_temp	  =	iGreen;
+	iGreen_temp    =	iGreen;
+
+end 
 	
 end
 	
 
-				if((SW[9]==0 && SW[8]==0)|| (SW[9]==1&& SW[8]==1))begin 										//Przekierowanie obrazu bez filtrów
+				if((SW[9]==0 && SW[8]==0) || (SW[9]==1&& SW[8]==1))begin 										//Przekierowanie obrazu bez filtrów
 				iRed_temp	  =	iRed;
 				iBlue_temp	  =	iBlue;
 				iGreen_temp    =	iGreen;

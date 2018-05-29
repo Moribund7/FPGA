@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DE1_SoC_TV
-Tue May  8 13:43:28 2018
+Tue May 29 12:38:29 2018
 Quartus Prime Version 17.0.2 Build 602 07/19/2017 SJ Lite Edition
 
 
@@ -19,123 +19,126 @@ Quartus Prime Version 17.0.2 Build 602 07/19/2017 SJ Lite Edition
  11. State Machine - |DE1_SoC_TV|I2C_AV_Config:u1|mSetup_ST
  12. Registers Protected by Synthesis
  13. User-Specified and Inferred Latches
- 14. Registers Removed During Synthesis
- 15. Removed Registers Triggering Further Register Optimizations
- 16. General Register Statistics
- 17. Inverted Register Statistics
- 18. Multiplexer Restructuring Statistics (Restructuring Performed)
- 19. Source assignments for DIV:u5|lpm_divide:LPM_DIVIDE_component|lpm_divide_h3t:auto_generated|sign_div_unsign_3li:divider|alt_u_div_tuf:divider
- 20. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo1|dcfifo:dcfifo_component
- 21. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated
- 22. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|a_graycounter_nv6:rdptr_g1p
- 23. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|a_graycounter_jdc:wrptr_g1p
- 24. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|altsyncram_d3f1:fifo_ram
- 25. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|dffpipe_oe9:rs_brp
- 26. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|dffpipe_oe9:rs_bwp
- 27. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|alt_synch_pipe_8pl:rs_dgwp
- 28. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|alt_synch_pipe_8pl:rs_dgwp|dffpipe_pe9:dffpipe13
- 29. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|dffpipe_oe9:ws_brp
- 30. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|dffpipe_oe9:ws_bwp
- 31. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|alt_synch_pipe_9pl:ws_dgrp
- 32. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|alt_synch_pipe_9pl:ws_dgrp|dffpipe_qe9:dffpipe16
- 33. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo2|dcfifo:dcfifo_component
- 34. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated
- 35. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|a_graycounter_nv6:rdptr_g1p
- 36. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|a_graycounter_jdc:wrptr_g1p
- 37. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|altsyncram_d3f1:fifo_ram
- 38. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|dffpipe_oe9:rs_brp
- 39. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|dffpipe_oe9:rs_bwp
- 40. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|alt_synch_pipe_8pl:rs_dgwp
- 41. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|alt_synch_pipe_8pl:rs_dgwp|dffpipe_pe9:dffpipe13
- 42. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|dffpipe_oe9:ws_brp
- 43. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|dffpipe_oe9:ws_bwp
- 44. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|alt_synch_pipe_9pl:ws_dgrp
- 45. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|alt_synch_pipe_9pl:ws_dgrp|dffpipe_qe9:dffpipe16
- 46. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo1|dcfifo:dcfifo_component
- 47. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated
- 48. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|a_graycounter_nv6:rdptr_g1p
- 49. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|a_graycounter_jdc:wrptr_g1p
- 50. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|altsyncram_d3f1:fifo_ram
- 51. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|dffpipe_oe9:rs_brp
- 52. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|dffpipe_oe9:rs_bwp
- 53. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|alt_synch_pipe_8pl:rs_dgwp
- 54. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|alt_synch_pipe_8pl:rs_dgwp|dffpipe_pe9:dffpipe13
- 55. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|dffpipe_oe9:ws_brp
- 56. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|dffpipe_oe9:ws_bwp
- 57. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|alt_synch_pipe_9pl:ws_dgrp
- 58. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|alt_synch_pipe_9pl:ws_dgrp|dffpipe_qe9:dffpipe16
- 59. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo2|dcfifo:dcfifo_component
- 60. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated
- 61. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|a_graycounter_nv6:rdptr_g1p
- 62. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|a_graycounter_jdc:wrptr_g1p
- 63. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|altsyncram_d3f1:fifo_ram
- 64. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|dffpipe_oe9:rs_brp
- 65. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|dffpipe_oe9:rs_bwp
- 66. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|alt_synch_pipe_8pl:rs_dgwp
- 67. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|alt_synch_pipe_8pl:rs_dgwp|dffpipe_pe9:dffpipe13
- 68. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|dffpipe_oe9:ws_brp
- 69. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|dffpipe_oe9:ws_bwp
- 70. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|alt_synch_pipe_9pl:ws_dgrp
- 71. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|alt_synch_pipe_9pl:ws_dgrp|dffpipe_qe9:dffpipe16
- 72. Source assignments for Line_Buffer:u10|altshift_taps:ALTSHIFT_TAPS_component|shift_taps_9c61:auto_generated|altsyncram_ffj1:altsyncram2
- 73. Source assignments for Line_Buffer:u10|altshift_taps:ALTSHIFT_TAPS_component|shift_taps_9c61:auto_generated|cntr_b6h:cntr3
- 74. Source assignments for Line_Buffer:u11|altshift_taps:ALTSHIFT_TAPS_component|shift_taps_9c61:auto_generated|altsyncram_ffj1:altsyncram2
- 75. Source assignments for Line_Buffer:u11|altshift_taps:ALTSHIFT_TAPS_component|shift_taps_9c61:auto_generated|cntr_b6h:cntr3
- 76. Parameter Settings for User Entity Instance: DIV:u5|lpm_divide:LPM_DIVIDE_component
- 77. Parameter Settings for User Entity Instance: Sdram_Control_4Port:u6
- 78. Parameter Settings for User Entity Instance: Sdram_Control_4Port:u6|Sdram_PLL:sdram_pll1|Sdram_PLL_0002:sdram_pll_inst|altera_pll:altera_pll_i
- 79. Parameter Settings for User Entity Instance: Sdram_Control_4Port:u6|control_interface:control1
- 80. Parameter Settings for User Entity Instance: Sdram_Control_4Port:u6|command:command1
- 81. Parameter Settings for User Entity Instance: Sdram_Control_4Port:u6|sdr_data_path:data_path1
- 82. Parameter Settings for User Entity Instance: Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo1|dcfifo:dcfifo_component
- 83. Parameter Settings for User Entity Instance: Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo2|dcfifo:dcfifo_component
- 84. Parameter Settings for User Entity Instance: Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo1|dcfifo:dcfifo_component
- 85. Parameter Settings for User Entity Instance: Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo2|dcfifo:dcfifo_component
- 86. Parameter Settings for User Entity Instance: YCbCr2RGB:u8|MAC_3:u0
- 87. Parameter Settings for User Entity Instance: YCbCr2RGB:u8|MAC_3:u0|altera_mult_add:mac_3_inst
- 88. Parameter Settings for User Entity Instance: YCbCr2RGB:u8|MAC_3:u0|altera_mult_add:mac_3_inst|altera_mult_add_vp8c:auto_generated|altera_mult_add_rtl:altera_mult_add_rtl1
- 89. Parameter Settings for User Entity Instance: YCbCr2RGB:u8|MAC_3:u1
- 90. Parameter Settings for User Entity Instance: YCbCr2RGB:u8|MAC_3:u1|altera_mult_add:mac_3_inst
- 91. Parameter Settings for User Entity Instance: YCbCr2RGB:u8|MAC_3:u1|altera_mult_add:mac_3_inst|altera_mult_add_vp8c:auto_generated|altera_mult_add_rtl:altera_mult_add_rtl1
- 92. Parameter Settings for User Entity Instance: YCbCr2RGB:u8|MAC_3:u2
- 93. Parameter Settings for User Entity Instance: YCbCr2RGB:u8|MAC_3:u2|altera_mult_add:mac_3_inst
- 94. Parameter Settings for User Entity Instance: YCbCr2RGB:u8|MAC_3:u2|altera_mult_add:mac_3_inst|altera_mult_add_vp8c:auto_generated|altera_mult_add_rtl:altera_mult_add_rtl1
- 95. Parameter Settings for User Entity Instance: VGA_Ctrl:u9
- 96. Parameter Settings for User Entity Instance: Line_Buffer:u10|altshift_taps:ALTSHIFT_TAPS_component
- 97. Parameter Settings for User Entity Instance: Line_Buffer:u11|altshift_taps:ALTSHIFT_TAPS_component
- 98. Parameter Settings for User Entity Instance: AUDIO_DAC:u12
- 99. Parameter Settings for User Entity Instance: I2C_AV_Config:u1
-100. Parameter Settings for Inferred Entity Instance: VGA_Ctrl:u9|lpm_divide:Div0
+ 14. Logic Cells Representing Combinational Loops
+ 15. Registers Removed During Synthesis
+ 16. Removed Registers Triggering Further Register Optimizations
+ 17. General Register Statistics
+ 18. Inverted Register Statistics
+ 19. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 20. Source assignments for DIV:u5|lpm_divide:LPM_DIVIDE_component|lpm_divide_h3t:auto_generated|sign_div_unsign_3li:divider|alt_u_div_tuf:divider
+ 21. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo1|dcfifo:dcfifo_component
+ 22. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated
+ 23. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|a_graycounter_nv6:rdptr_g1p
+ 24. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|a_graycounter_jdc:wrptr_g1p
+ 25. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|altsyncram_d3f1:fifo_ram
+ 26. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|dffpipe_oe9:rs_brp
+ 27. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|dffpipe_oe9:rs_bwp
+ 28. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|alt_synch_pipe_8pl:rs_dgwp
+ 29. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|alt_synch_pipe_8pl:rs_dgwp|dffpipe_pe9:dffpipe13
+ 30. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|dffpipe_oe9:ws_brp
+ 31. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|dffpipe_oe9:ws_bwp
+ 32. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|alt_synch_pipe_9pl:ws_dgrp
+ 33. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|alt_synch_pipe_9pl:ws_dgrp|dffpipe_qe9:dffpipe16
+ 34. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo2|dcfifo:dcfifo_component
+ 35. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated
+ 36. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|a_graycounter_nv6:rdptr_g1p
+ 37. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|a_graycounter_jdc:wrptr_g1p
+ 38. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|altsyncram_d3f1:fifo_ram
+ 39. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|dffpipe_oe9:rs_brp
+ 40. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|dffpipe_oe9:rs_bwp
+ 41. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|alt_synch_pipe_8pl:rs_dgwp
+ 42. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|alt_synch_pipe_8pl:rs_dgwp|dffpipe_pe9:dffpipe13
+ 43. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|dffpipe_oe9:ws_brp
+ 44. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|dffpipe_oe9:ws_bwp
+ 45. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|alt_synch_pipe_9pl:ws_dgrp
+ 46. Source assignments for Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|alt_synch_pipe_9pl:ws_dgrp|dffpipe_qe9:dffpipe16
+ 47. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo1|dcfifo:dcfifo_component
+ 48. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated
+ 49. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|a_graycounter_nv6:rdptr_g1p
+ 50. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|a_graycounter_jdc:wrptr_g1p
+ 51. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|altsyncram_d3f1:fifo_ram
+ 52. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|dffpipe_oe9:rs_brp
+ 53. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|dffpipe_oe9:rs_bwp
+ 54. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|alt_synch_pipe_8pl:rs_dgwp
+ 55. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|alt_synch_pipe_8pl:rs_dgwp|dffpipe_pe9:dffpipe13
+ 56. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|dffpipe_oe9:ws_brp
+ 57. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|dffpipe_oe9:ws_bwp
+ 58. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|alt_synch_pipe_9pl:ws_dgrp
+ 59. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo1|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|alt_synch_pipe_9pl:ws_dgrp|dffpipe_qe9:dffpipe16
+ 60. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo2|dcfifo:dcfifo_component
+ 61. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated
+ 62. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|a_graycounter_nv6:rdptr_g1p
+ 63. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|a_graycounter_jdc:wrptr_g1p
+ 64. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|altsyncram_d3f1:fifo_ram
+ 65. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|dffpipe_oe9:rs_brp
+ 66. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|dffpipe_oe9:rs_bwp
+ 67. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|alt_synch_pipe_8pl:rs_dgwp
+ 68. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|alt_synch_pipe_8pl:rs_dgwp|dffpipe_pe9:dffpipe13
+ 69. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|dffpipe_oe9:ws_brp
+ 70. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|dffpipe_oe9:ws_bwp
+ 71. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|alt_synch_pipe_9pl:ws_dgrp
+ 72. Source assignments for Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo2|dcfifo:dcfifo_component|dcfifo_bg02:auto_generated|alt_synch_pipe_9pl:ws_dgrp|dffpipe_qe9:dffpipe16
+ 73. Source assignments for Line_Buffer:u10|altshift_taps:ALTSHIFT_TAPS_component|shift_taps_9c61:auto_generated|altsyncram_ffj1:altsyncram2
+ 74. Source assignments for Line_Buffer:u10|altshift_taps:ALTSHIFT_TAPS_component|shift_taps_9c61:auto_generated|cntr_b6h:cntr3
+ 75. Source assignments for Line_Buffer:u11|altshift_taps:ALTSHIFT_TAPS_component|shift_taps_9c61:auto_generated|altsyncram_ffj1:altsyncram2
+ 76. Source assignments for Line_Buffer:u11|altshift_taps:ALTSHIFT_TAPS_component|shift_taps_9c61:auto_generated|cntr_b6h:cntr3
+ 77. Parameter Settings for User Entity Instance: DIV:u5|lpm_divide:LPM_DIVIDE_component
+ 78. Parameter Settings for User Entity Instance: Sdram_Control_4Port:u6
+ 79. Parameter Settings for User Entity Instance: Sdram_Control_4Port:u6|Sdram_PLL:sdram_pll1|Sdram_PLL_0002:sdram_pll_inst|altera_pll:altera_pll_i
+ 80. Parameter Settings for User Entity Instance: Sdram_Control_4Port:u6|control_interface:control1
+ 81. Parameter Settings for User Entity Instance: Sdram_Control_4Port:u6|command:command1
+ 82. Parameter Settings for User Entity Instance: Sdram_Control_4Port:u6|sdr_data_path:data_path1
+ 83. Parameter Settings for User Entity Instance: Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo1|dcfifo:dcfifo_component
+ 84. Parameter Settings for User Entity Instance: Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo2|dcfifo:dcfifo_component
+ 85. Parameter Settings for User Entity Instance: Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo1|dcfifo:dcfifo_component
+ 86. Parameter Settings for User Entity Instance: Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo2|dcfifo:dcfifo_component
+ 87. Parameter Settings for User Entity Instance: YCbCr2RGB:u8|MAC_3:u0
+ 88. Parameter Settings for User Entity Instance: YCbCr2RGB:u8|MAC_3:u0|altera_mult_add:mac_3_inst
+ 89. Parameter Settings for User Entity Instance: YCbCr2RGB:u8|MAC_3:u0|altera_mult_add:mac_3_inst|altera_mult_add_vp8c:auto_generated|altera_mult_add_rtl:altera_mult_add_rtl1
+ 90. Parameter Settings for User Entity Instance: YCbCr2RGB:u8|MAC_3:u1
+ 91. Parameter Settings for User Entity Instance: YCbCr2RGB:u8|MAC_3:u1|altera_mult_add:mac_3_inst
+ 92. Parameter Settings for User Entity Instance: YCbCr2RGB:u8|MAC_3:u1|altera_mult_add:mac_3_inst|altera_mult_add_vp8c:auto_generated|altera_mult_add_rtl:altera_mult_add_rtl1
+ 93. Parameter Settings for User Entity Instance: YCbCr2RGB:u8|MAC_3:u2
+ 94. Parameter Settings for User Entity Instance: YCbCr2RGB:u8|MAC_3:u2|altera_mult_add:mac_3_inst
+ 95. Parameter Settings for User Entity Instance: YCbCr2RGB:u8|MAC_3:u2|altera_mult_add:mac_3_inst|altera_mult_add_vp8c:auto_generated|altera_mult_add_rtl:altera_mult_add_rtl1
+ 96. Parameter Settings for User Entity Instance: VGA_Ctrl:u9
+ 97. Parameter Settings for User Entity Instance: Line_Buffer:u10|altshift_taps:ALTSHIFT_TAPS_component
+ 98. Parameter Settings for User Entity Instance: Line_Buffer:u11|altshift_taps:ALTSHIFT_TAPS_component
+ 99. Parameter Settings for User Entity Instance: AUDIO_DAC:u12
+100. Parameter Settings for User Entity Instance: I2C_AV_Config:u1
 101. Parameter Settings for Inferred Entity Instance: VGA_Ctrl:u9|lpm_divide:Div1
-102. Parameter Settings for Inferred Entity Instance: VGA_Ctrl:u9|lpm_divide:Div2
+102. Parameter Settings for Inferred Entity Instance: VGA_Ctrl:u9|lpm_divide:Div0
 103. Parameter Settings for Inferred Entity Instance: VGA_Ctrl:u9|lpm_divide:Div3
-104. dcfifo Parameter Settings by Entity Instance
-105. altshift_taps Parameter Settings by Entity Instance
-106. Port Connectivity Checks: "I2C_AV_Config:u1|I2C_Controller:u0"
-107. Port Connectivity Checks: "AUDIO_DAC:u12"
-108. Port Connectivity Checks: "Line_Buffer:u11"
-109. Port Connectivity Checks: "Line_Buffer:u10"
-110. Port Connectivity Checks: "VGA_Ctrl:u9"
-111. Port Connectivity Checks: "YCbCr2RGB:u8|MAC_3:u2"
-112. Port Connectivity Checks: "YCbCr2RGB:u8|MAC_3:u1"
-113. Port Connectivity Checks: "YCbCr2RGB:u8|MAC_3:u0"
-114. Port Connectivity Checks: "YCbCr2RGB:u8"
-115. Port Connectivity Checks: "YUV422_to_444:u7"
-116. Port Connectivity Checks: "Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo2"
-117. Port Connectivity Checks: "Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo1"
-118. Port Connectivity Checks: "Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo2"
-119. Port Connectivity Checks: "Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo1"
-120. Port Connectivity Checks: "Sdram_Control_4Port:u6|sdr_data_path:data_path1"
-121. Port Connectivity Checks: "Sdram_Control_4Port:u6|control_interface:control1"
-122. Port Connectivity Checks: "Sdram_Control_4Port:u6|Sdram_PLL:sdram_pll1"
-123. Port Connectivity Checks: "Sdram_Control_4Port:u6"
-124. Port Connectivity Checks: "DIV:u5"
-125. Port Connectivity Checks: "ITU_656_Decoder:u4"
-126. Port Connectivity Checks: "TD_Detect:u2"
-127. Port Connectivity Checks: "SEG7_LUT_6:u0"
-128. Post-Synthesis Netlist Statistics for Top Partition
-129. Elapsed Time Per Partition
-130. Analysis & Synthesis Messages
+104. Parameter Settings for Inferred Entity Instance: VGA_Ctrl:u9|lpm_divide:Div5
+105. Parameter Settings for Inferred Entity Instance: VGA_Ctrl:u9|lpm_divide:Div2
+106. Parameter Settings for Inferred Entity Instance: VGA_Ctrl:u9|lpm_divide:Div4
+107. dcfifo Parameter Settings by Entity Instance
+108. altshift_taps Parameter Settings by Entity Instance
+109. Port Connectivity Checks: "I2C_AV_Config:u1|I2C_Controller:u0"
+110. Port Connectivity Checks: "AUDIO_DAC:u12"
+111. Port Connectivity Checks: "Line_Buffer:u11"
+112. Port Connectivity Checks: "Line_Buffer:u10"
+113. Port Connectivity Checks: "VGA_Ctrl:u9"
+114. Port Connectivity Checks: "YCbCr2RGB:u8|MAC_3:u2"
+115. Port Connectivity Checks: "YCbCr2RGB:u8|MAC_3:u1"
+116. Port Connectivity Checks: "YCbCr2RGB:u8|MAC_3:u0"
+117. Port Connectivity Checks: "YCbCr2RGB:u8"
+118. Port Connectivity Checks: "YUV422_to_444:u7"
+119. Port Connectivity Checks: "Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo2"
+120. Port Connectivity Checks: "Sdram_Control_4Port:u6|Sdram_RD_FIFO:read_fifo1"
+121. Port Connectivity Checks: "Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo2"
+122. Port Connectivity Checks: "Sdram_Control_4Port:u6|Sdram_WR_FIFO:write_fifo1"
+123. Port Connectivity Checks: "Sdram_Control_4Port:u6|sdr_data_path:data_path1"
+124. Port Connectivity Checks: "Sdram_Control_4Port:u6|control_interface:control1"
+125. Port Connectivity Checks: "Sdram_Control_4Port:u6|Sdram_PLL:sdram_pll1"
+126. Port Connectivity Checks: "Sdram_Control_4Port:u6"
+127. Port Connectivity Checks: "DIV:u5"
+128. Port Connectivity Checks: "ITU_656_Decoder:u4"
+129. Port Connectivity Checks: "TD_Detect:u2"
+130. Port Connectivity Checks: "SEG7_LUT_6:u0"
+131. Post-Synthesis Netlist Statistics for Top Partition
+132. Elapsed Time Per Partition
+133. Analysis & Synthesis Messages
 
 
 
@@ -162,7 +165,7 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue May  8 13:43:28 2018       ;
+; Analysis & Synthesis Status     ; Successful - Tue May 29 12:38:29 2018       ;
 ; Quartus Prime Version           ; 17.0.2 Build 602 07/19/2017 SJ Lite Edition ;
 ; Revision Name                   ; DE1_SoC_TV                                  ;
 ; Top-level Entity Name           ; DE1_SoC_TV                                  ;
@@ -358,9 +361,9 @@ agreement for further details.
 ; db/cntr_lmf.tdf                                ; yes             ; Auto-Generated Megafunction  ; /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/db/cntr_lmf.tdf                                ;           ;
 ; db/cmpr_pac.tdf                                ; yes             ; Auto-Generated Megafunction  ; /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/db/cmpr_pac.tdf                                ;           ;
 ; db/cntr_b6h.tdf                                ; yes             ; Auto-Generated Megafunction  ; /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/db/cntr_b6h.tdf                                ;           ;
-; db/lpm_divide_ibm.tdf                          ; yes             ; Auto-Generated Megafunction  ; /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/db/lpm_divide_ibm.tdf                          ;           ;
-; db/sign_div_unsign_olh.tdf                     ; yes             ; Auto-Generated Megafunction  ; /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/db/sign_div_unsign_olh.tdf                     ;           ;
-; db/alt_u_div_mve.tdf                           ; yes             ; Auto-Generated Megafunction  ; /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/db/alt_u_div_mve.tdf                           ;           ;
+; db/lpm_divide_dbm.tdf                          ; yes             ; Auto-Generated Megafunction  ; /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/db/lpm_divide_dbm.tdf                          ;           ;
+; db/sign_div_unsign_jlh.tdf                     ; yes             ; Auto-Generated Megafunction  ; /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/db/sign_div_unsign_jlh.tdf                     ;           ;
+; db/alt_u_div_cve.tdf                           ; yes             ; Auto-Generated Megafunction  ; /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/db/alt_u_div_cve.tdf                           ;           ;
 ; db/lpm_divide_gbm.tdf                          ; yes             ; Auto-Generated Megafunction  ; /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/db/lpm_divide_gbm.tdf                          ;           ;
 ; db/sign_div_unsign_mlh.tdf                     ; yes             ; Auto-Generated Megafunction  ; /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/db/sign_div_unsign_mlh.tdf                     ;           ;
 ; db/alt_u_div_ive.tdf                           ; yes             ; Auto-Generated Megafunction  ; /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/db/alt_u_div_ive.tdf                           ;           ;
@@ -372,14 +375,14 @@ agreement for further details.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimate of Logic utilization (ALMs needed) ; 1119           ;
+; Estimate of Logic utilization (ALMs needed) ; 1099           ;
 ;                                             ;                ;
-; Combinational ALUT usage for logic          ; 1769           ;
-;     -- 7 input functions                    ; 2              ;
-;     -- 6 input functions                    ; 369            ;
-;     -- 5 input functions                    ; 196            ;
-;     -- 4 input functions                    ; 239            ;
-;     -- <=3 input functions                  ; 963            ;
+; Combinational ALUT usage for logic          ; 1765           ;
+;     -- 7 input functions                    ; 7              ;
+;     -- 6 input functions                    ; 307            ;
+;     -- 5 input functions                    ; 238            ;
+;     -- 4 input functions                    ; 217            ;
+;     -- <=3 input functions                  ; 996            ;
 ;                                             ;                ;
 ; Dedicated logic registers                   ; 1286           ;
 ;                                             ;                ;
@@ -394,8 +397,8 @@ agreement for further details.
 ;                                             ;                ;
 ; Maximum fan-out node                        ; TD_CLK27~input ;
 ; Maximum fan-out                             ; 798            ;
-; Total fan-out                               ; 12886          ;
-; Average fan-out                             ; 3.44           ;
+; Total fan-out                               ; 12705          ;
+; Average fan-out                             ; 3.40           ;
 +---------------------------------------------+----------------+
 
 
@@ -404,16 +407,16 @@ agreement for further details.
 +----------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+--------------+
 ; Compilation Hierarchy Node                                           ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                 ; Entity Name                     ; Library Name ;
 +----------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+--------------+
-; |DE1_SoC_TV                                                          ; 1769 (39)           ; 1286 (0)                  ; 45024             ; 11         ; 241  ; 0            ; |DE1_SoC_TV                                                                                                                                                                                                                         ; DE1_SoC_TV                      ; work         ;
+; |DE1_SoC_TV                                                          ; 1765 (39)           ; 1286 (0)                  ; 45024             ; 11         ; 241  ; 0            ; |DE1_SoC_TV                                                                                                                                                                                                                         ; DE1_SoC_TV                      ; work         ;
 ;    |AUDIO_DAC:u12|                                                   ; 15 (15)             ; 14 (14)                   ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_TV|AUDIO_DAC:u12                                                                                                                                                                                                           ; AUDIO_DAC                       ; work         ;
-;    |CHOSE_FILTR:ch|                                                  ; 60 (60)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_TV|CHOSE_FILTR:ch                                                                                                                                                                                                          ; CHOSE_FILTR                     ; work         ;
+;    |CHOSE_FILTR:ch|                                                  ; 99 (99)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_TV|CHOSE_FILTR:ch                                                                                                                                                                                                          ; CHOSE_FILTR                     ; work         ;
 ;    |DIV:u5|                                                          ; 19 (0)              ; 10 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_TV|DIV:u5                                                                                                                                                                                                                  ; DIV                             ; work         ;
 ;       |lpm_divide:LPM_DIVIDE_component|                              ; 19 (0)              ; 10 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_TV|DIV:u5|lpm_divide:LPM_DIVIDE_component                                                                                                                                                                                  ; lpm_divide                      ; work         ;
 ;          |lpm_divide_h3t:auto_generated|                             ; 19 (0)              ; 10 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_TV|DIV:u5|lpm_divide:LPM_DIVIDE_component|lpm_divide_h3t:auto_generated                                                                                                                                                    ; lpm_divide_h3t                  ; work         ;
 ;             |sign_div_unsign_3li:divider|                            ; 19 (0)              ; 10 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_TV|DIV:u5|lpm_divide:LPM_DIVIDE_component|lpm_divide_h3t:auto_generated|sign_div_unsign_3li:divider                                                                                                                        ; sign_div_unsign_3li             ; work         ;
 ;                |alt_u_div_tuf:divider|                               ; 19 (19)             ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_TV|DIV:u5|lpm_divide:LPM_DIVIDE_component|lpm_divide_h3t:auto_generated|sign_div_unsign_3li:divider|alt_u_div_tuf:divider                                                                                                  ; alt_u_div_tuf                   ; work         ;
-;    |I2C_AV_Config:u1|                                                ; 97 (54)             ; 75 (45)                   ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_TV|I2C_AV_Config:u1                                                                                                                                                                                                        ; I2C_AV_Config                   ; work         ;
-;       |I2C_Controller:u0|                                            ; 43 (43)             ; 30 (30)                   ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_TV|I2C_AV_Config:u1|I2C_Controller:u0                                                                                                                                                                                      ; I2C_Controller                  ; work         ;
+;    |I2C_AV_Config:u1|                                                ; 98 (54)             ; 75 (45)                   ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_TV|I2C_AV_Config:u1                                                                                                                                                                                                        ; I2C_AV_Config                   ; work         ;
+;       |I2C_Controller:u0|                                            ; 44 (44)             ; 30 (30)                   ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_TV|I2C_AV_Config:u1|I2C_Controller:u0                                                                                                                                                                                      ; I2C_Controller                  ; work         ;
 ;    |ITU_656_Decoder:u4|                                              ; 45 (45)             ; 80 (80)                   ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_TV|ITU_656_Decoder:u4                                                                                                                                                                                                      ; ITU_656_Decoder                 ; work         ;
 ;    |Line_Buffer:u10|                                                 ; 34 (0)              ; 21 (0)                    ; 10208             ; 0          ; 0    ; 0            ; |DE1_SoC_TV|Line_Buffer:u10                                                                                                                                                                                                         ; Line_Buffer                     ; work         ;
 ;       |altshift_taps:ALTSHIFT_TAPS_component|                        ; 34 (0)              ; 21 (0)                    ; 10208             ; 0          ; 0    ; 0            ; |DE1_SoC_TV|Line_Buffer:u10|altshift_taps:ALTSHIFT_TAPS_component                                                                                                                                                                   ; altshift_taps                   ; work         ;
@@ -493,23 +496,31 @@ agreement for further details.
 ;       |command:command1|                                             ; 55 (55)             ; 49 (49)                   ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_TV|Sdram_Control_4Port:u6|command:command1                                                                                                                                                                                 ; command                         ; work         ;
 ;       |control_interface:control1|                                   ; 75 (75)             ; 56 (56)                   ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_TV|Sdram_Control_4Port:u6|control_interface:control1                                                                                                                                                                       ; control_interface               ; work         ;
 ;    |TD_Detect:u2|                                                    ; 13 (13)             ; 11 (11)                   ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_TV|TD_Detect:u2                                                                                                                                                                                                            ; TD_Detect                       ; work         ;
-;    |VGA_Ctrl:u9|                                                     ; 690 (335)           ; 24 (24)                   ; 0                 ; 5          ; 0    ; 0            ; |DE1_SoC_TV|VGA_Ctrl:u9                                                                                                                                                                                                             ; VGA_Ctrl                        ; work         ;
-;       |lpm_divide:Div0|                                              ; 136 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_TV|VGA_Ctrl:u9|lpm_divide:Div0                                                                                                                                                                                             ; lpm_divide                      ; work         ;
-;          |lpm_divide_ibm:auto_generated|                             ; 136 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_TV|VGA_Ctrl:u9|lpm_divide:Div0|lpm_divide_ibm:auto_generated                                                                                                                                                               ; lpm_divide_ibm                  ; work         ;
-;             |sign_div_unsign_olh:divider|                            ; 136 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_TV|VGA_Ctrl:u9|lpm_divide:Div0|lpm_divide_ibm:auto_generated|sign_div_unsign_olh:divider                                                                                                                                   ; sign_div_unsign_olh             ; work         ;
-;                |alt_u_div_mve:divider|                               ; 136 (136)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_TV|VGA_Ctrl:u9|lpm_divide:Div0|lpm_divide_ibm:auto_generated|sign_div_unsign_olh:divider|alt_u_div_mve:divider                                                                                                             ; alt_u_div_mve                   ; work         ;
-;       |lpm_divide:Div1|                                              ; 73 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_TV|VGA_Ctrl:u9|lpm_divide:Div1                                                                                                                                                                                             ; lpm_divide                      ; work         ;
-;          |lpm_divide_gbm:auto_generated|                             ; 73 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_TV|VGA_Ctrl:u9|lpm_divide:Div1|lpm_divide_gbm:auto_generated                                                                                                                                                               ; lpm_divide_gbm                  ; work         ;
-;             |sign_div_unsign_mlh:divider|                            ; 73 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_TV|VGA_Ctrl:u9|lpm_divide:Div1|lpm_divide_gbm:auto_generated|sign_div_unsign_mlh:divider                                                                                                                                   ; sign_div_unsign_mlh             ; work         ;
-;                |alt_u_div_ive:divider|                               ; 73 (73)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_TV|VGA_Ctrl:u9|lpm_divide:Div1|lpm_divide_gbm:auto_generated|sign_div_unsign_mlh:divider|alt_u_div_ive:divider                                                                                                             ; alt_u_div_ive                   ; work         ;
-;       |lpm_divide:Div2|                                              ; 73 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_TV|VGA_Ctrl:u9|lpm_divide:Div2                                                                                                                                                                                             ; lpm_divide                      ; work         ;
-;          |lpm_divide_gbm:auto_generated|                             ; 73 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_TV|VGA_Ctrl:u9|lpm_divide:Div2|lpm_divide_gbm:auto_generated                                                                                                                                                               ; lpm_divide_gbm                  ; work         ;
-;             |sign_div_unsign_mlh:divider|                            ; 73 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_TV|VGA_Ctrl:u9|lpm_divide:Div2|lpm_divide_gbm:auto_generated|sign_div_unsign_mlh:divider                                                                                                                                   ; sign_div_unsign_mlh             ; work         ;
-;                |alt_u_div_ive:divider|                               ; 73 (73)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_TV|VGA_Ctrl:u9|lpm_divide:Div2|lpm_divide_gbm:auto_generated|sign_div_unsign_mlh:divider|alt_u_div_ive:divider                                                                                                             ; alt_u_div_ive                   ; work         ;
+;    |VGA_Ctrl:u9|                                                     ; 646 (288)           ; 24 (24)                   ; 0                 ; 5          ; 0    ; 0            ; |DE1_SoC_TV|VGA_Ctrl:u9                                                                                                                                                                                                             ; VGA_Ctrl                        ; work         ;
+;       |lpm_divide:Div0|                                              ; 43 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_TV|VGA_Ctrl:u9|lpm_divide:Div0                                                                                                                                                                                             ; lpm_divide                      ; work         ;
+;          |lpm_divide_dbm:auto_generated|                             ; 43 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_TV|VGA_Ctrl:u9|lpm_divide:Div0|lpm_divide_dbm:auto_generated                                                                                                                                                               ; lpm_divide_dbm                  ; work         ;
+;             |sign_div_unsign_jlh:divider|                            ; 43 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_TV|VGA_Ctrl:u9|lpm_divide:Div0|lpm_divide_dbm:auto_generated|sign_div_unsign_jlh:divider                                                                                                                                   ; sign_div_unsign_jlh             ; work         ;
+;                |alt_u_div_cve:divider|                               ; 43 (43)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_TV|VGA_Ctrl:u9|lpm_divide:Div0|lpm_divide_dbm:auto_generated|sign_div_unsign_jlh:divider|alt_u_div_cve:divider                                                                                                             ; alt_u_div_cve                   ; work         ;
+;       |lpm_divide:Div1|                                              ; 43 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_TV|VGA_Ctrl:u9|lpm_divide:Div1                                                                                                                                                                                             ; lpm_divide                      ; work         ;
+;          |lpm_divide_dbm:auto_generated|                             ; 43 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_TV|VGA_Ctrl:u9|lpm_divide:Div1|lpm_divide_dbm:auto_generated                                                                                                                                                               ; lpm_divide_dbm                  ; work         ;
+;             |sign_div_unsign_jlh:divider|                            ; 43 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_TV|VGA_Ctrl:u9|lpm_divide:Div1|lpm_divide_dbm:auto_generated|sign_div_unsign_jlh:divider                                                                                                                                   ; sign_div_unsign_jlh             ; work         ;
+;                |alt_u_div_cve:divider|                               ; 43 (43)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_TV|VGA_Ctrl:u9|lpm_divide:Div1|lpm_divide_dbm:auto_generated|sign_div_unsign_jlh:divider|alt_u_div_cve:divider                                                                                                             ; alt_u_div_cve                   ; work         ;
+;       |lpm_divide:Div2|                                              ; 53 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_TV|VGA_Ctrl:u9|lpm_divide:Div2                                                                                                                                                                                             ; lpm_divide                      ; work         ;
+;          |lpm_divide_dbm:auto_generated|                             ; 53 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_TV|VGA_Ctrl:u9|lpm_divide:Div2|lpm_divide_dbm:auto_generated                                                                                                                                                               ; lpm_divide_dbm                  ; work         ;
+;             |sign_div_unsign_jlh:divider|                            ; 53 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_TV|VGA_Ctrl:u9|lpm_divide:Div2|lpm_divide_dbm:auto_generated|sign_div_unsign_jlh:divider                                                                                                                                   ; sign_div_unsign_jlh             ; work         ;
+;                |alt_u_div_cve:divider|                               ; 53 (53)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_TV|VGA_Ctrl:u9|lpm_divide:Div2|lpm_divide_dbm:auto_generated|sign_div_unsign_jlh:divider|alt_u_div_cve:divider                                                                                                             ; alt_u_div_cve                   ; work         ;
 ;       |lpm_divide:Div3|                                              ; 73 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_TV|VGA_Ctrl:u9|lpm_divide:Div3                                                                                                                                                                                             ; lpm_divide                      ; work         ;
 ;          |lpm_divide_gbm:auto_generated|                             ; 73 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_TV|VGA_Ctrl:u9|lpm_divide:Div3|lpm_divide_gbm:auto_generated                                                                                                                                                               ; lpm_divide_gbm                  ; work         ;
 ;             |sign_div_unsign_mlh:divider|                            ; 73 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_TV|VGA_Ctrl:u9|lpm_divide:Div3|lpm_divide_gbm:auto_generated|sign_div_unsign_mlh:divider                                                                                                                                   ; sign_div_unsign_mlh             ; work         ;
 ;                |alt_u_div_ive:divider|                               ; 73 (73)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_TV|VGA_Ctrl:u9|lpm_divide:Div3|lpm_divide_gbm:auto_generated|sign_div_unsign_mlh:divider|alt_u_div_ive:divider                                                                                                             ; alt_u_div_ive                   ; work         ;
+;       |lpm_divide:Div4|                                              ; 73 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_TV|VGA_Ctrl:u9|lpm_divide:Div4                                                                                                                                                                                             ; lpm_divide                      ; work         ;
+;          |lpm_divide_gbm:auto_generated|                             ; 73 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_TV|VGA_Ctrl:u9|lpm_divide:Div4|lpm_divide_gbm:auto_generated                                                                                                                                                               ; lpm_divide_gbm                  ; work         ;
+;             |sign_div_unsign_mlh:divider|                            ; 73 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_TV|VGA_Ctrl:u9|lpm_divide:Div4|lpm_divide_gbm:auto_generated|sign_div_unsign_mlh:divider                                                                                                                                   ; sign_div_unsign_mlh             ; work         ;
+;                |alt_u_div_ive:divider|                               ; 73 (73)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_TV|VGA_Ctrl:u9|lpm_divide:Div4|lpm_divide_gbm:auto_generated|sign_div_unsign_mlh:divider|alt_u_div_ive:divider                                                                                                             ; alt_u_div_ive                   ; work         ;
+;       |lpm_divide:Div5|                                              ; 73 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_TV|VGA_Ctrl:u9|lpm_divide:Div5                                                                                                                                                                                             ; lpm_divide                      ; work         ;
+;          |lpm_divide_gbm:auto_generated|                             ; 73 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_TV|VGA_Ctrl:u9|lpm_divide:Div5|lpm_divide_gbm:auto_generated                                                                                                                                                               ; lpm_divide_gbm                  ; work         ;
+;             |sign_div_unsign_mlh:divider|                            ; 73 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_TV|VGA_Ctrl:u9|lpm_divide:Div5|lpm_divide_gbm:auto_generated|sign_div_unsign_mlh:divider                                                                                                                                   ; sign_div_unsign_mlh             ; work         ;
+;                |alt_u_div_ive:divider|                               ; 73 (73)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |DE1_SoC_TV|VGA_Ctrl:u9|lpm_divide:Div5|lpm_divide_gbm:auto_generated|sign_div_unsign_mlh:divider|alt_u_div_ive:divider                                                                                                             ; alt_u_div_ive                   ; work         ;
 ;    |YCbCr2RGB:u8|                                                    ; 113 (113)           ; 407 (90)                  ; 0                 ; 6          ; 0    ; 0            ; |DE1_SoC_TV|YCbCr2RGB:u8                                                                                                                                                                                                            ; YCbCr2RGB                       ; work         ;
 ;       |MAC_3:u0|                                                     ; 0 (0)               ; 105 (0)                   ; 0                 ; 2          ; 0    ; 0            ; |DE1_SoC_TV|YCbCr2RGB:u8|MAC_3:u0                                                                                                                                                                                                   ; MAC_3                           ; MAC_3        ;
 ;          |altera_mult_add:mac_3_inst|                                ; 0 (0)               ; 105 (0)                   ; 0                 ; 2          ; 0    ; 0            ; |DE1_SoC_TV|YCbCr2RGB:u8|MAC_3:u0|altera_mult_add:mac_3_inst                                                                                                                                                                        ; altera_mult_add                 ; work         ;
@@ -595,11 +606,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Statistic                         ; Number Used ;
 +-----------------------------------+-------------+
 ; Two Independent 18x18             ; 3           ;
-; Independent 18x18 plus 36         ; 5           ;
-; Sum of two 18x18                  ; 3           ;
+; Independent 18x18 plus 36         ; 4           ;
+; Sum of two 18x18                  ; 4           ;
 ; Total number of DSP blocks        ; 11          ;
 ;                                   ;             ;
-; Fixed Point Unsigned Multiplier   ; 12          ;
+; Fixed Point Unsigned Multiplier   ; 13          ;
 ; Fixed Point Mixed Sign Multiplier ; 2           ;
 +-----------------------------------+-------------+
 
@@ -769,67 +780,52 @@ Encoding Type:  One-Hot
 +-----------------------------------------------------+-----------------------------+------------------------+
 ; Latch Name                                          ; Latch Enable Signal         ; Free of Timing Hazards ;
 +-----------------------------------------------------+-----------------------------+------------------------+
-; VGA_Ctrl:u9|oVGA_B_temp[2]                          ; VGA_Ctrl:u9|oVGA_R_temp[9]  ; yes                    ;
-; VGA_Ctrl:u9|oVGA_B_temp[3]                          ; VGA_Ctrl:u9|oVGA_R_temp[9]  ; yes                    ;
-; VGA_Ctrl:u9|oVGA_B_temp[4]                          ; VGA_Ctrl:u9|oVGA_R_temp[9]  ; yes                    ;
-; VGA_Ctrl:u9|oVGA_B_temp[5]                          ; VGA_Ctrl:u9|oVGA_R_temp[9]  ; yes                    ;
-; VGA_Ctrl:u9|oVGA_B_temp[6]                          ; VGA_Ctrl:u9|oVGA_R_temp[9]  ; yes                    ;
-; VGA_Ctrl:u9|oVGA_B_temp[7]                          ; VGA_Ctrl:u9|oVGA_R_temp[9]  ; yes                    ;
-; VGA_Ctrl:u9|oVGA_B_temp[8]                          ; VGA_Ctrl:u9|oVGA_R_temp[9]  ; yes                    ;
-; VGA_Ctrl:u9|oVGA_B_temp[9]                          ; VGA_Ctrl:u9|oVGA_R_temp[9]  ; yes                    ;
-; VGA_Ctrl:u9|oVGA_G_temp[2]                          ; VGA_Ctrl:u9|oVGA_R_temp[9]  ; yes                    ;
-; VGA_Ctrl:u9|oVGA_G_temp[3]                          ; VGA_Ctrl:u9|oVGA_R_temp[9]  ; yes                    ;
-; VGA_Ctrl:u9|oVGA_G_temp[4]                          ; VGA_Ctrl:u9|oVGA_R_temp[9]  ; yes                    ;
-; VGA_Ctrl:u9|oVGA_G_temp[5]                          ; VGA_Ctrl:u9|oVGA_R_temp[9]  ; yes                    ;
-; VGA_Ctrl:u9|oVGA_G_temp[6]                          ; VGA_Ctrl:u9|oVGA_R_temp[9]  ; yes                    ;
-; VGA_Ctrl:u9|oVGA_G_temp[7]                          ; VGA_Ctrl:u9|oVGA_R_temp[9]  ; yes                    ;
-; VGA_Ctrl:u9|oVGA_G_temp[8]                          ; VGA_Ctrl:u9|oVGA_R_temp[9]  ; yes                    ;
-; VGA_Ctrl:u9|oVGA_G_temp[9]                          ; VGA_Ctrl:u9|oVGA_R_temp[9]  ; yes                    ;
-; VGA_Ctrl:u9|oVGA_R_temp[2]                          ; VGA_Ctrl:u9|oVGA_R_temp[9]  ; yes                    ;
-; VGA_Ctrl:u9|oVGA_R_temp[3]                          ; VGA_Ctrl:u9|oVGA_R_temp[9]  ; yes                    ;
-; VGA_Ctrl:u9|oVGA_R_temp[4]                          ; VGA_Ctrl:u9|oVGA_R_temp[9]  ; yes                    ;
-; VGA_Ctrl:u9|oVGA_R_temp[5]                          ; VGA_Ctrl:u9|oVGA_R_temp[9]  ; yes                    ;
-; VGA_Ctrl:u9|oVGA_R_temp[6]                          ; VGA_Ctrl:u9|oVGA_R_temp[9]  ; yes                    ;
-; VGA_Ctrl:u9|oVGA_R_temp[7]                          ; VGA_Ctrl:u9|oVGA_R_temp[9]  ; yes                    ;
-; VGA_Ctrl:u9|oVGA_R_temp[8]                          ; VGA_Ctrl:u9|oVGA_R_temp[9]  ; yes                    ;
-; VGA_Ctrl:u9|oVGA_R_temp[9]                          ; VGA_Ctrl:u9|oVGA_R_temp[9]  ; yes                    ;
-; CHOSE_FILTR:ch|iBlue_temp[2]                        ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
-; CHOSE_FILTR:ch|iBlue_temp[5]                        ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
-; CHOSE_FILTR:ch|iBlue_temp[4]                        ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
 ; CHOSE_FILTR:ch|iBlue_temp[3]                        ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
+; CHOSE_FILTR:ch|iBlue_temp[4]                        ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
+; CHOSE_FILTR:ch|iBlue_temp[5]                        ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
 ; CHOSE_FILTR:ch|iBlue_temp[9]                        ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
 ; CHOSE_FILTR:ch|iBlue_temp[8]                        ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
 ; CHOSE_FILTR:ch|iBlue_temp[7]                        ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
 ; CHOSE_FILTR:ch|iBlue_temp[6]                        ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
+; CHOSE_FILTR:ch|iBlue_temp[2]                        ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
 ; CHOSE_FILTR:ch|iBlue_temp[1]                        ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
 ; CHOSE_FILTR:ch|iBlue_temp[0]                        ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
-; VGA_Ctrl:u9|oVGA_R_temp[1]                          ; VGA_Ctrl:u9|oVGA_R_temp[9]  ; yes                    ;
-; CHOSE_FILTR:ch|iRed_temp[4]                         ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
-; CHOSE_FILTR:ch|iRed_temp[3]                         ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
-; CHOSE_FILTR:ch|iRed_temp[2]                         ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
-; CHOSE_FILTR:ch|iRed_temp[1]                         ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
-; CHOSE_FILTR:ch|iRed_temp[9]                         ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
-; CHOSE_FILTR:ch|iRed_temp[8]                         ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
-; CHOSE_FILTR:ch|iRed_temp[7]                         ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
-; CHOSE_FILTR:ch|iRed_temp[6]                         ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
-; CHOSE_FILTR:ch|iRed_temp[5]                         ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
-; CHOSE_FILTR:ch|iRed_temp[0]                         ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
-; VGA_Ctrl:u9|oVGA_R_temp[0]                          ; VGA_Ctrl:u9|oVGA_R_temp[9]  ; yes                    ;
-; VGA_Ctrl:u9|oVGA_B_temp[0]                          ; VGA_Ctrl:u9|oVGA_R_temp[9]  ; yes                    ;
-; VGA_Ctrl:u9|oVGA_B_temp[1]                          ; VGA_Ctrl:u9|oVGA_R_temp[9]  ; yes                    ;
+; CHOSE_FILTR:ch|iGreen_temp[3]                       ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
 ; CHOSE_FILTR:ch|iGreen_temp[9]                       ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
 ; CHOSE_FILTR:ch|iGreen_temp[8]                       ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
 ; CHOSE_FILTR:ch|iGreen_temp[7]                       ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
 ; CHOSE_FILTR:ch|iGreen_temp[6]                       ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
 ; CHOSE_FILTR:ch|iGreen_temp[5]                       ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
 ; CHOSE_FILTR:ch|iGreen_temp[4]                       ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
-; CHOSE_FILTR:ch|iGreen_temp[3]                       ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
 ; CHOSE_FILTR:ch|iGreen_temp[2]                       ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
 ; CHOSE_FILTR:ch|iGreen_temp[1]                       ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
 ; CHOSE_FILTR:ch|iGreen_temp[0]                       ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
-; Number of user-specified and inferred latches = 58  ;                             ;                        ;
+; CHOSE_FILTR:ch|iRed_temp[9]                         ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
+; CHOSE_FILTR:ch|iRed_temp[8]                         ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
+; CHOSE_FILTR:ch|iRed_temp[7]                         ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
+; CHOSE_FILTR:ch|iRed_temp[6]                         ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
+; CHOSE_FILTR:ch|iRed_temp[5]                         ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
+; CHOSE_FILTR:ch|iRed_temp[4]                         ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
+; CHOSE_FILTR:ch|iRed_temp[3]                         ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
+; CHOSE_FILTR:ch|iRed_temp[2]                         ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
+; CHOSE_FILTR:ch|iRed_temp[1]                         ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
+; CHOSE_FILTR:ch|iRed_temp[0]                         ; CHOSE_FILTR:ch|iRed_temp[9] ; yes                    ;
+; Number of user-specified and inferred latches = 30  ;                             ;                        ;
 +-----------------------------------------------------+-----------------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++------------------------------------------------------------+
+; Logic Cells Representing Combinational Loops               ;
++--------------------------------------------------------+---+
+; Logic Cell Name                                        ;   ;
++--------------------------------------------------------+---+
+; VGA_Ctrl:u9|oVGA_B_temp[2]~1                           ;   ;
+; VGA_Ctrl:u9|oVGA_B_temp~0                              ;   ;
+; VGA_Ctrl:u9|oVGA_G_temp~0                              ;   ;
+; Number of logic cells representing combinational loops ; 3 ;
++--------------------------------------------------------+---+
+Note: All cells listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -1709,12 +1705,12 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; Inverted Register                                                                                                                          ; Fan out ;
 +--------------------------------------------------------------------------------------------------------------------------------------------+---------+
 ; I2C_AV_Config:u1|I2C_Controller:u0|SCLK                                                                                                    ; 2       ;
-; I2C_AV_Config:u1|I2C_Controller:u0|SD_COUNTER[5]                                                                                           ; 18      ;
-; I2C_AV_Config:u1|I2C_Controller:u0|SD_COUNTER[4]                                                                                           ; 18      ;
-; I2C_AV_Config:u1|I2C_Controller:u0|SD_COUNTER[3]                                                                                           ; 25      ;
-; I2C_AV_Config:u1|I2C_Controller:u0|SD_COUNTER[2]                                                                                           ; 20      ;
-; I2C_AV_Config:u1|I2C_Controller:u0|SD_COUNTER[1]                                                                                           ; 20      ;
-; I2C_AV_Config:u1|I2C_Controller:u0|SD_COUNTER[0]                                                                                           ; 24      ;
+; I2C_AV_Config:u1|I2C_Controller:u0|SD_COUNTER[5]                                                                                           ; 17      ;
+; I2C_AV_Config:u1|I2C_Controller:u0|SD_COUNTER[4]                                                                                           ; 19      ;
+; I2C_AV_Config:u1|I2C_Controller:u0|SD_COUNTER[3]                                                                                           ; 24      ;
+; I2C_AV_Config:u1|I2C_Controller:u0|SD_COUNTER[2]                                                                                           ; 21      ;
+; I2C_AV_Config:u1|I2C_Controller:u0|SD_COUNTER[1]                                                                                           ; 19      ;
+; I2C_AV_Config:u1|I2C_Controller:u0|SD_COUNTER[0]                                                                                           ; 25      ;
 ; VGA_Ctrl:u9|oVGA_HS                                                                                                                        ; 14      ;
 ; VGA_Ctrl:u9|oVGA_VS                                                                                                                        ; 2       ;
 ; I2C_AV_Config:u1|I2C_Controller:u0|END                                                                                                     ; 5       ;
@@ -1761,46 +1757,44 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                             ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------+
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |DE1_SoC_TV|Sdram_Control_4Port:u6|command:command1|BA[1]              ;
-; 3:1                ; 15 bits   ; 30 LEs        ; 15 LEs               ; 15 LEs                 ; Yes        ; |DE1_SoC_TV|Sdram_Control_4Port:u6|control_interface:control1|timer[7] ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |DE1_SoC_TV|Sdram_Control_4Port:u6|command:command1|command_delay[1]   ;
-; 3:1                ; 18 bits   ; 36 LEs        ; 0 LEs                ; 36 LEs                 ; Yes        ; |DE1_SoC_TV|ITU_656_Decoder:u4|Cont[15]                                ;
-; 4:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |DE1_SoC_TV|Sdram_Control_4Port:u6|command:command1|SA[4]              ;
-; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |DE1_SoC_TV|Sdram_Control_4Port:u6|mADDR[8]                            ;
-; 4:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |DE1_SoC_TV|YCbCr2RGB:u8|oBlue[1]                                      ;
-; 4:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |DE1_SoC_TV|YCbCr2RGB:u8|oGreen[7]                                     ;
-; 4:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |DE1_SoC_TV|YCbCr2RGB:u8|oRed[5]                                       ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |DE1_SoC_TV|Sdram_Control_4Port:u6|command:command1|rp_shift[2]        ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |DE1_SoC_TV|Sdram_Control_4Port:u6|command:command1|BA[0]              ;
+; 3:1                ; 15 bits   ; 30 LEs        ; 15 LEs               ; 15 LEs                 ; Yes        ; |DE1_SoC_TV|Sdram_Control_4Port:u6|control_interface:control1|timer[8] ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |DE1_SoC_TV|Sdram_Control_4Port:u6|command:command1|command_delay[0]   ;
+; 3:1                ; 18 bits   ; 36 LEs        ; 0 LEs                ; 36 LEs                 ; Yes        ; |DE1_SoC_TV|ITU_656_Decoder:u4|Cont[2]                                 ;
+; 4:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |DE1_SoC_TV|Sdram_Control_4Port:u6|command:command1|SA[9]              ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |DE1_SoC_TV|Sdram_Control_4Port:u6|mADDR[18]                           ;
+; 4:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |DE1_SoC_TV|YCbCr2RGB:u8|oBlue[4]                                      ;
+; 4:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |DE1_SoC_TV|YCbCr2RGB:u8|oGreen[2]                                     ;
+; 4:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |DE1_SoC_TV|YCbCr2RGB:u8|oRed[3]                                       ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |DE1_SoC_TV|Sdram_Control_4Port:u6|command:command1|rp_done            ;
 ; 4:1                ; 16 bits   ; 32 LEs        ; 0 LEs                ; 32 LEs                 ; Yes        ; |DE1_SoC_TV|Sdram_Control_4Port:u6|rWR1_ADDR[8]                        ;
 ; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; Yes        ; |DE1_SoC_TV|Sdram_Control_4Port:u6|rRD2_ADDR[22]                       ;
-; 4:1                ; 10 bits   ; 20 LEs        ; 0 LEs                ; 20 LEs                 ; Yes        ; |DE1_SoC_TV|Sdram_Control_4Port:u6|rRD1_ADDR[22]                       ;
+; 4:1                ; 10 bits   ; 20 LEs        ; 0 LEs                ; 20 LEs                 ; Yes        ; |DE1_SoC_TV|Sdram_Control_4Port:u6|rRD1_ADDR[17]                       ;
 ; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |DE1_SoC_TV|Sdram_Control_4Port:u6|WR_MASK[0]                          ;
 ; 6:1                ; 3 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |DE1_SoC_TV|Sdram_Control_4Port:u6|RD_MASK[1]                          ;
 ; 8:1                ; 8 bits    ; 40 LEs        ; 8 LEs                ; 32 LEs                 ; Yes        ; |DE1_SoC_TV|ITU_656_Decoder:u4|YCbCr[4]                                ;
-; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |DE1_SoC_TV|Sdram_Control_4Port:u6|CMD[0]                              ;
-; 7:1                ; 10 bits   ; 40 LEs        ; 20 LEs               ; 20 LEs                 ; Yes        ; |DE1_SoC_TV|Sdram_Control_4Port:u6|ST[9]                               ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |DE1_SoC_TV|I2C_AV_Config:u1|I2C_Controller:u0|SD_COUNTER[5]           ;
-; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |DE1_SoC_TV|Sdram_Control_4Port:u6|rRD2_ADDR[9]                        ;
-; 4:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |DE1_SoC_TV|Sdram_Control_4Port:u6|rRD2_ADDR[16]                       ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |DE1_SoC_TV|Sdram_Control_4Port:u6|rRD1_ADDR[9]                        ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |DE1_SoC_TV|Sdram_Control_4Port:u6|CMD[1]                              ;
+; 7:1                ; 10 bits   ; 40 LEs        ; 20 LEs               ; 20 LEs                 ; Yes        ; |DE1_SoC_TV|Sdram_Control_4Port:u6|ST[7]                               ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |DE1_SoC_TV|I2C_AV_Config:u1|I2C_Controller:u0|SD_COUNTER[4]           ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |DE1_SoC_TV|Sdram_Control_4Port:u6|rRD2_ADDR[8]                        ;
+; 4:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |DE1_SoC_TV|Sdram_Control_4Port:u6|rRD2_ADDR[7]                        ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |DE1_SoC_TV|Sdram_Control_4Port:u6|rRD1_ADDR[8]                        ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |DE1_SoC_TV|VGA_Ctrl:u9|mnoznik1                                       ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |DE1_SoC_TV|VGA_Ctrl:u9|mnoznik2                                       ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |DE1_SoC_TV|VGA_Ctrl:u9|oVGA_B_temp                                    ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |DE1_SoC_TV|VGA_Ctrl:u9|oVGA_B_temp                                    ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |DE1_SoC_TV|VGA_Ctrl:u9|oVGA_G_temp[9]                                 ;
-; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |DE1_SoC_TV|VGA_Ctrl:u9|oVGA_R_temp                                    ;
-; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |DE1_SoC_TV|VGA_Ctrl:u9|oVGA_B_temp                                    ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |DE1_SoC_TV|VGA_Ctrl:u9|oVGA_B_temp                                    ;
-; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |DE1_SoC_TV|VGA_Ctrl:u9|oVGA_R_temp                                    ;
-; 4:1                ; 14 bits   ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; No         ; |DE1_SoC_TV|VGA_Ctrl:u9|oVGA_B_temp                                    ;
+; 4:1                ; 10 bits   ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |DE1_SoC_TV|VGA_Ctrl:u9|oVGA_R_temp                                    ;
 ; 4:1                ; 10 bits   ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |DE1_SoC_TV|VGA_Ctrl:u9|oVGA_B_temp                                    ;
 ; 4:1                ; 10 bits   ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |DE1_SoC_TV|VGA_Ctrl:u9|oVGA_B_temp                                    ;
-; 5:1                ; 10 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; No         ; |DE1_SoC_TV|VGA_Ctrl:u9|oVGA_B_temp[8]                                 ;
-; 5:1                ; 20 bits   ; 60 LEs        ; 60 LEs               ; 0 LEs                  ; No         ; |DE1_SoC_TV|VGA_Ctrl:u9|oVGA_R_temp                                    ;
-; 7:1                ; 10 bits   ; 40 LEs        ; 20 LEs               ; 20 LEs                 ; No         ; |DE1_SoC_TV|CHOSE_FILTR:ch|iBlue_temp[5]                               ;
-; 7:1                ; 10 bits   ; 40 LEs        ; 30 LEs               ; 10 LEs                 ; No         ; |DE1_SoC_TV|CHOSE_FILTR:ch|iRed_temp[8]                                ;
-; 8:1                ; 10 bits   ; 50 LEs        ; 40 LEs               ; 10 LEs                 ; No         ; |DE1_SoC_TV|VGA_Ctrl:u9|oVGA_R_temp[8]                                 ;
-; 11:1               ; 5 bits    ; 35 LEs        ; 30 LEs               ; 5 LEs                  ; No         ; |DE1_SoC_TV|VGA_Ctrl:u9|oVGA_G_temp[2]                                 ;
+; 4:1                ; 10 bits   ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |DE1_SoC_TV|VGA_Ctrl:u9|oVGA_B_temp                                    ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |DE1_SoC_TV|VGA_Ctrl:u9|oVGA_B_temp                                    ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |DE1_SoC_TV|VGA_Ctrl:u9|oVGA_B_temp                                    ;
+; 5:1                ; 16 bits   ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |DE1_SoC_TV|VGA_Ctrl:u9|oVGA_R_temp                                    ;
+; 5:1                ; 10 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; No         ; |DE1_SoC_TV|VGA_Ctrl:u9|oVGA_B_temp[5]                                 ;
+; 5:1                ; 20 bits   ; 60 LEs        ; 60 LEs               ; 0 LEs                  ; No         ; |DE1_SoC_TV|VGA_Ctrl:u9|oVGA_B_temp                                    ;
+; 8:1                ; 10 bits   ; 50 LEs        ; 40 LEs               ; 10 LEs                 ; No         ; |DE1_SoC_TV|VGA_Ctrl:u9|oVGA_R_temp[1]                                 ;
+; 11:1               ; 6 bits    ; 42 LEs        ; 36 LEs               ; 6 LEs                  ; No         ; |DE1_SoC_TV|VGA_Ctrl:u9|oVGA_G_temp[7]                                 ;
+; 17:1               ; 10 bits   ; 110 LEs       ; 20 LEs               ; 90 LEs                 ; No         ; |DE1_SoC_TV|CHOSE_FILTR:ch|iRed_temp[0]                                ;
+; 19:1               ; 8 bits    ; 96 LEs        ; 16 LEs               ; 80 LEs                 ; No         ; |DE1_SoC_TV|CHOSE_FILTR:ch|iGreen_temp[8]                              ;
+; 18:1               ; 10 bits   ; 120 LEs       ; 20 LEs               ; 100 LEs                ; No         ; |DE1_SoC_TV|CHOSE_FILTR:ch|iBlue_temp[6]                               ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------+
 
 
@@ -5394,18 +5388,18 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: VGA_Ctrl:u9|lpm_divide:Div0 ;
+; Parameter Settings for Inferred Entity Instance: VGA_Ctrl:u9|lpm_divide:Div1 ;
 +------------------------+----------------+------------------------------------+
 ; Parameter Name         ; Value          ; Type                               ;
 +------------------------+----------------+------------------------------------+
-; LPM_WIDTHN             ; 14             ; Untyped                            ;
-; LPM_WIDTHD             ; 4              ; Untyped                            ;
+; LPM_WIDTHN             ; 11             ; Untyped                            ;
+; LPM_WIDTHD             ; 2              ; Untyped                            ;
 ; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                            ;
 ; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                            ;
 ; LPM_PIPELINE           ; 0              ; Untyped                            ;
 ; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                            ;
 ; MAXIMIZE_SPEED         ; 5              ; Untyped                            ;
-; CBXI_PARAMETER         ; lpm_divide_ibm ; Untyped                            ;
+; CBXI_PARAMETER         ; lpm_divide_dbm ; Untyped                            ;
 ; CARRY_CHAIN            ; MANUAL         ; Untyped                            ;
 ; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                            ;
 ; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                         ;
@@ -5417,7 +5411,53 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: VGA_Ctrl:u9|lpm_divide:Div1 ;
+; Parameter Settings for Inferred Entity Instance: VGA_Ctrl:u9|lpm_divide:Div0 ;
++------------------------+----------------+------------------------------------+
+; Parameter Name         ; Value          ; Type                               ;
++------------------------+----------------+------------------------------------+
+; LPM_WIDTHN             ; 11             ; Untyped                            ;
+; LPM_WIDTHD             ; 2              ; Untyped                            ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                            ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                            ;
+; LPM_PIPELINE           ; 0              ; Untyped                            ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                            ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                            ;
+; CBXI_PARAMETER         ; lpm_divide_dbm ; Untyped                            ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                            ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                            ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                         ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                       ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                       ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                     ;
++------------------------+----------------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: VGA_Ctrl:u9|lpm_divide:Div3 ;
++------------------------+----------------+------------------------------------+
+; Parameter Name         ; Value          ; Type                               ;
++------------------------+----------------+------------------------------------+
+; LPM_WIDTHN             ; 14             ; Untyped                            ;
+; LPM_WIDTHD             ; 2              ; Untyped                            ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                            ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                            ;
+; LPM_PIPELINE           ; 0              ; Untyped                            ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                            ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                            ;
+; CBXI_PARAMETER         ; lpm_divide_gbm ; Untyped                            ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                            ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                            ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                         ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                       ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                       ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                     ;
++------------------------+----------------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: VGA_Ctrl:u9|lpm_divide:Div5 ;
 +------------------------+----------------+------------------------------------+
 ; Parameter Name         ; Value          ; Type                               ;
 +------------------------+----------------+------------------------------------+
@@ -5444,14 +5484,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------------------------+----------------+------------------------------------+
 ; Parameter Name         ; Value          ; Type                               ;
 +------------------------+----------------+------------------------------------+
-; LPM_WIDTHN             ; 14             ; Untyped                            ;
+; LPM_WIDTHN             ; 11             ; Untyped                            ;
 ; LPM_WIDTHD             ; 2              ; Untyped                            ;
 ; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                            ;
 ; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                            ;
 ; LPM_PIPELINE           ; 0              ; Untyped                            ;
 ; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                            ;
 ; MAXIMIZE_SPEED         ; 5              ; Untyped                            ;
-; CBXI_PARAMETER         ; lpm_divide_gbm ; Untyped                            ;
+; CBXI_PARAMETER         ; lpm_divide_dbm ; Untyped                            ;
 ; CARRY_CHAIN            ; MANUAL         ; Untyped                            ;
 ; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                            ;
 ; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                         ;
@@ -5463,7 +5503,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: VGA_Ctrl:u9|lpm_divide:Div3 ;
+; Parameter Settings for Inferred Entity Instance: VGA_Ctrl:u9|lpm_divide:Div4 ;
 +------------------------+----------------+------------------------------------+
 ; Parameter Name         ; Value          ; Type                               ;
 +------------------------+----------------+------------------------------------+
@@ -5887,36 +5927,35 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     SLD               ; 4                           ;
 ;     plain             ; 28                          ;
 ; arriav_io_obuf        ; 96                          ;
-; arriav_lcell_comb     ; 1777                        ;
-;     arith             ; 563                         ;
-;         0 data inputs ; 69                          ;
-;         1 data inputs ; 334                         ;
-;         2 data inputs ; 34                          ;
-;         3 data inputs ; 48                          ;
-;         4 data inputs ; 73                          ;
-;         5 data inputs ; 5                           ;
-;     extend            ; 2                           ;
-;         7 data inputs ; 2                           ;
-;     normal            ; 1160                        ;
+; arriav_lcell_comb     ; 1773                        ;
+;     arith             ; 580                         ;
+;         0 data inputs ; 71                          ;
+;         1 data inputs ; 361                         ;
+;         2 data inputs ; 35                          ;
+;         3 data inputs ; 60                          ;
+;         4 data inputs ; 53                          ;
+;     extend            ; 7                           ;
+;         7 data inputs ; 7                           ;
+;     normal            ; 1139                        ;
 ;         0 data inputs ; 2                           ;
 ;         1 data inputs ; 36                          ;
-;         2 data inputs ; 229                         ;
-;         3 data inputs ; 167                         ;
-;         4 data inputs ; 166                         ;
-;         5 data inputs ; 191                         ;
-;         6 data inputs ; 369                         ;
-;     shared            ; 52                          ;
-;         0 data inputs ; 4                           ;
+;         2 data inputs ; 244                         ;
+;         3 data inputs ; 148                         ;
+;         4 data inputs ; 164                         ;
+;         5 data inputs ; 238                         ;
+;         6 data inputs ; 307                         ;
+;     shared            ; 47                          ;
+;         0 data inputs ; 2                           ;
 ;         1 data inputs ; 2                           ;
 ;         2 data inputs ; 31                          ;
-;         3 data inputs ; 15                          ;
+;         3 data inputs ; 12                          ;
 ; arriav_mac            ; 11                          ;
 ; boundary_port         ; 241                         ;
 ; generic_pll           ; 3                           ;
 ; stratixv_ram_block    ; 96                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 25.50                       ;
-; Average LUT depth     ; 6.23                        ;
+; Max LUT depth         ; 24.80                       ;
+; Average LUT depth     ; 5.59                        ;
 +-----------------------+-----------------------------+
 
 
@@ -5935,7 +5974,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.2 Build 602 07/19/2017 SJ Lite Edition
-    Info: Processing started: Tue May  8 13:43:07 2018
+    Info: Processing started: Tue May 29 12:38:10 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DE1_SoC_TV -c DE1_SoC_TV
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -6748,91 +6787,91 @@ Info (12131): Elaborated megafunction instantiation "YCbCr2RGB:u8|MAC_3:u0|alter
 Info (12128): Elaborating entity "ama_register_function" for hierarchy "YCbCr2RGB:u8|MAC_3:u0|altera_mult_add:mac_3_inst|altera_mult_add_vp8c:auto_generated|altera_mult_add_rtl:altera_mult_add_rtl1|ama_register_function:output_reg_block" File: /work/staff/pablo/altera/17.0/quartus/libraries/megafunctions/altera_mult_add_rtl.v Line: 1490
 Info (12131): Elaborated megafunction instantiation "YCbCr2RGB:u8|MAC_3:u0|altera_mult_add:mac_3_inst|altera_mult_add_vp8c:auto_generated|altera_mult_add_rtl:altera_mult_add_rtl1|ama_register_function:output_reg_block", which is child of megafunction instantiation "YCbCr2RGB:u8|MAC_3:u0|altera_mult_add:mac_3_inst|altera_mult_add_vp8c:auto_generated|altera_mult_add_rtl:altera_mult_add_rtl1" File: /work/staff/pablo/altera/17.0/quartus/libraries/megafunctions/altera_mult_add_rtl.v Line: 1490
 Info (12128): Elaborating entity "CHOSE_FILTR" for hierarchy "CHOSE_FILTR:ch" File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 429
-Warning (10240): Verilog HDL Always Construct warning at CHOSE_FILTR.v(34): inferring latch(es) for variable "iRed_temp", which holds its previous value in one or more paths through the always construct File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 34
-Warning (10240): Verilog HDL Always Construct warning at CHOSE_FILTR.v(34): inferring latch(es) for variable "iBlue_temp", which holds its previous value in one or more paths through the always construct File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 34
-Warning (10240): Verilog HDL Always Construct warning at CHOSE_FILTR.v(34): inferring latch(es) for variable "iGreen_temp", which holds its previous value in one or more paths through the always construct File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 34
-Info (10041): Inferred latch for "iGreen_temp[0]" at CHOSE_FILTR.v(127) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Info (10041): Inferred latch for "iGreen_temp[1]" at CHOSE_FILTR.v(127) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Info (10041): Inferred latch for "iGreen_temp[2]" at CHOSE_FILTR.v(127) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Info (10041): Inferred latch for "iGreen_temp[3]" at CHOSE_FILTR.v(127) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Info (10041): Inferred latch for "iGreen_temp[4]" at CHOSE_FILTR.v(127) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Info (10041): Inferred latch for "iGreen_temp[5]" at CHOSE_FILTR.v(127) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Info (10041): Inferred latch for "iGreen_temp[6]" at CHOSE_FILTR.v(127) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Info (10041): Inferred latch for "iGreen_temp[7]" at CHOSE_FILTR.v(127) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Info (10041): Inferred latch for "iGreen_temp[8]" at CHOSE_FILTR.v(127) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Info (10041): Inferred latch for "iGreen_temp[9]" at CHOSE_FILTR.v(127) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Info (10041): Inferred latch for "iBlue_temp[0]" at CHOSE_FILTR.v(127) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Info (10041): Inferred latch for "iBlue_temp[1]" at CHOSE_FILTR.v(127) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Info (10041): Inferred latch for "iBlue_temp[2]" at CHOSE_FILTR.v(127) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Info (10041): Inferred latch for "iBlue_temp[3]" at CHOSE_FILTR.v(127) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Info (10041): Inferred latch for "iBlue_temp[4]" at CHOSE_FILTR.v(127) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Info (10041): Inferred latch for "iBlue_temp[5]" at CHOSE_FILTR.v(127) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Info (10041): Inferred latch for "iBlue_temp[6]" at CHOSE_FILTR.v(127) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Info (10041): Inferred latch for "iBlue_temp[7]" at CHOSE_FILTR.v(127) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Info (10041): Inferred latch for "iBlue_temp[8]" at CHOSE_FILTR.v(127) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Info (10041): Inferred latch for "iBlue_temp[9]" at CHOSE_FILTR.v(127) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Info (10041): Inferred latch for "iRed_temp[0]" at CHOSE_FILTR.v(127) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Info (10041): Inferred latch for "iRed_temp[1]" at CHOSE_FILTR.v(127) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Info (10041): Inferred latch for "iRed_temp[2]" at CHOSE_FILTR.v(127) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Info (10041): Inferred latch for "iRed_temp[3]" at CHOSE_FILTR.v(127) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Info (10041): Inferred latch for "iRed_temp[4]" at CHOSE_FILTR.v(127) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Info (10041): Inferred latch for "iRed_temp[5]" at CHOSE_FILTR.v(127) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Info (10041): Inferred latch for "iRed_temp[6]" at CHOSE_FILTR.v(127) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Info (10041): Inferred latch for "iRed_temp[7]" at CHOSE_FILTR.v(127) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Info (10041): Inferred latch for "iRed_temp[8]" at CHOSE_FILTR.v(127) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Info (10041): Inferred latch for "iRed_temp[9]" at CHOSE_FILTR.v(127) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
+Warning (10240): Verilog HDL Always Construct warning at CHOSE_FILTR.v(32): inferring latch(es) for variable "iRed_temp", which holds its previous value in one or more paths through the always construct File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 32
+Warning (10240): Verilog HDL Always Construct warning at CHOSE_FILTR.v(32): inferring latch(es) for variable "iBlue_temp", which holds its previous value in one or more paths through the always construct File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 32
+Warning (10240): Verilog HDL Always Construct warning at CHOSE_FILTR.v(32): inferring latch(es) for variable "iGreen_temp", which holds its previous value in one or more paths through the always construct File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 32
+Info (10041): Inferred latch for "iGreen_temp[0]" at CHOSE_FILTR.v(291) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 291
+Info (10041): Inferred latch for "iGreen_temp[1]" at CHOSE_FILTR.v(291) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 291
+Info (10041): Inferred latch for "iGreen_temp[2]" at CHOSE_FILTR.v(291) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 291
+Info (10041): Inferred latch for "iGreen_temp[3]" at CHOSE_FILTR.v(291) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 291
+Info (10041): Inferred latch for "iGreen_temp[4]" at CHOSE_FILTR.v(291) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 291
+Info (10041): Inferred latch for "iGreen_temp[5]" at CHOSE_FILTR.v(291) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 291
+Info (10041): Inferred latch for "iGreen_temp[6]" at CHOSE_FILTR.v(291) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 291
+Info (10041): Inferred latch for "iGreen_temp[7]" at CHOSE_FILTR.v(291) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 291
+Info (10041): Inferred latch for "iGreen_temp[8]" at CHOSE_FILTR.v(291) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 291
+Info (10041): Inferred latch for "iGreen_temp[9]" at CHOSE_FILTR.v(291) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 291
+Info (10041): Inferred latch for "iBlue_temp[0]" at CHOSE_FILTR.v(291) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 291
+Info (10041): Inferred latch for "iBlue_temp[1]" at CHOSE_FILTR.v(291) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 291
+Info (10041): Inferred latch for "iBlue_temp[2]" at CHOSE_FILTR.v(291) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 291
+Info (10041): Inferred latch for "iBlue_temp[3]" at CHOSE_FILTR.v(291) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 291
+Info (10041): Inferred latch for "iBlue_temp[4]" at CHOSE_FILTR.v(291) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 291
+Info (10041): Inferred latch for "iBlue_temp[5]" at CHOSE_FILTR.v(291) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 291
+Info (10041): Inferred latch for "iBlue_temp[6]" at CHOSE_FILTR.v(291) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 291
+Info (10041): Inferred latch for "iBlue_temp[7]" at CHOSE_FILTR.v(291) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 291
+Info (10041): Inferred latch for "iBlue_temp[8]" at CHOSE_FILTR.v(291) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 291
+Info (10041): Inferred latch for "iBlue_temp[9]" at CHOSE_FILTR.v(291) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 291
+Info (10041): Inferred latch for "iRed_temp[0]" at CHOSE_FILTR.v(291) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 291
+Info (10041): Inferred latch for "iRed_temp[1]" at CHOSE_FILTR.v(291) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 291
+Info (10041): Inferred latch for "iRed_temp[2]" at CHOSE_FILTR.v(291) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 291
+Info (10041): Inferred latch for "iRed_temp[3]" at CHOSE_FILTR.v(291) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 291
+Info (10041): Inferred latch for "iRed_temp[4]" at CHOSE_FILTR.v(291) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 291
+Info (10041): Inferred latch for "iRed_temp[5]" at CHOSE_FILTR.v(291) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 291
+Info (10041): Inferred latch for "iRed_temp[6]" at CHOSE_FILTR.v(291) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 291
+Info (10041): Inferred latch for "iRed_temp[7]" at CHOSE_FILTR.v(291) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 291
+Info (10041): Inferred latch for "iRed_temp[8]" at CHOSE_FILTR.v(291) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 291
+Info (10041): Inferred latch for "iRed_temp[9]" at CHOSE_FILTR.v(291) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 291
 Info (12128): Elaborating entity "VGA_Ctrl" for hierarchy "VGA_Ctrl:u9" File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 473
-Warning (10230): Verilog HDL assignment warning at VGA_Ctrl.v(104): truncated value with size 32 to match size of target (10) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 104
 Warning (10230): Verilog HDL assignment warning at VGA_Ctrl.v(110): truncated value with size 32 to match size of target (10) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 110
 Warning (10230): Verilog HDL assignment warning at VGA_Ctrl.v(116): truncated value with size 32 to match size of target (10) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 116
-Warning (10230): Verilog HDL assignment warning at VGA_Ctrl.v(131): truncated value with size 32 to match size of target (10) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 131
+Warning (10230): Verilog HDL assignment warning at VGA_Ctrl.v(122): truncated value with size 32 to match size of target (10) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 122
 Warning (10230): Verilog HDL assignment warning at VGA_Ctrl.v(137): truncated value with size 32 to match size of target (10) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 137
 Warning (10230): Verilog HDL assignment warning at VGA_Ctrl.v(143): truncated value with size 32 to match size of target (10) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 143
-Warning (10230): Verilog HDL assignment warning at VGA_Ctrl.v(171): truncated value with size 32 to match size of target (10) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 171
+Warning (10230): Verilog HDL assignment warning at VGA_Ctrl.v(149): truncated value with size 32 to match size of target (10) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 149
 Warning (10230): Verilog HDL assignment warning at VGA_Ctrl.v(177): truncated value with size 32 to match size of target (10) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 177
-Warning (10230): Verilog HDL assignment warning at VGA_Ctrl.v(184): truncated value with size 32 to match size of target (10) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 184
-Warning (10230): Verilog HDL assignment warning at VGA_Ctrl.v(218): truncated value with size 32 to match size of target (10) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 218
-Warning (10230): Verilog HDL assignment warning at VGA_Ctrl.v(226): truncated value with size 32 to match size of target (10) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 226
-Warning (10230): Verilog HDL assignment warning at VGA_Ctrl.v(235): truncated value with size 32 to match size of target (10) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 235
-Warning (10240): Verilog HDL Always Construct warning at VGA_Ctrl.v(98): inferring latch(es) for variable "oVGA_G_temp", which holds its previous value in one or more paths through the always construct File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 98
-Warning (10240): Verilog HDL Always Construct warning at VGA_Ctrl.v(98): inferring latch(es) for variable "oVGA_B_temp", which holds its previous value in one or more paths through the always construct File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 98
-Warning (10240): Verilog HDL Always Construct warning at VGA_Ctrl.v(98): inferring latch(es) for variable "oVGA_R_temp", which holds its previous value in one or more paths through the always construct File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 98
-Warning (10240): Verilog HDL Always Construct warning at VGA_Ctrl.v(98): inferring latch(es) for variable "mnoznik1", which holds its previous value in one or more paths through the always construct File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 98
-Warning (10240): Verilog HDL Always Construct warning at VGA_Ctrl.v(98): inferring latch(es) for variable "mnoznik2", which holds its previous value in one or more paths through the always construct File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 98
-Warning (10240): Verilog HDL Always Construct warning at VGA_Ctrl.v(98): inferring latch(es) for variable "dzielnik", which holds its previous value in one or more paths through the always construct File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 98
-Warning (10230): Verilog HDL assignment warning at VGA_Ctrl.v(265): truncated value with size 32 to match size of target (22) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 265
-Warning (10230): Verilog HDL assignment warning at VGA_Ctrl.v(268): truncated value with size 32 to match size of target (11) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 268
-Warning (10230): Verilog HDL assignment warning at VGA_Ctrl.v(269): truncated value with size 32 to match size of target (11) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 269
-Info (10041): Inferred latch for "oVGA_R_temp[0]" at VGA_Ctrl.v(197) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 197
-Info (10041): Inferred latch for "oVGA_R_temp[1]" at VGA_Ctrl.v(197) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 197
-Info (10041): Inferred latch for "oVGA_R_temp[2]" at VGA_Ctrl.v(197) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 197
-Info (10041): Inferred latch for "oVGA_R_temp[3]" at VGA_Ctrl.v(197) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 197
-Info (10041): Inferred latch for "oVGA_R_temp[4]" at VGA_Ctrl.v(197) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 197
-Info (10041): Inferred latch for "oVGA_R_temp[5]" at VGA_Ctrl.v(197) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 197
-Info (10041): Inferred latch for "oVGA_R_temp[6]" at VGA_Ctrl.v(197) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 197
-Info (10041): Inferred latch for "oVGA_R_temp[7]" at VGA_Ctrl.v(197) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 197
-Info (10041): Inferred latch for "oVGA_R_temp[8]" at VGA_Ctrl.v(197) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 197
-Info (10041): Inferred latch for "oVGA_R_temp[9]" at VGA_Ctrl.v(197) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 197
-Info (10041): Inferred latch for "oVGA_B_temp[0]" at VGA_Ctrl.v(197) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 197
-Info (10041): Inferred latch for "oVGA_B_temp[1]" at VGA_Ctrl.v(197) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 197
-Info (10041): Inferred latch for "oVGA_B_temp[2]" at VGA_Ctrl.v(197) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 197
-Info (10041): Inferred latch for "oVGA_B_temp[3]" at VGA_Ctrl.v(197) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 197
-Info (10041): Inferred latch for "oVGA_B_temp[4]" at VGA_Ctrl.v(197) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 197
-Info (10041): Inferred latch for "oVGA_B_temp[5]" at VGA_Ctrl.v(197) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 197
-Info (10041): Inferred latch for "oVGA_B_temp[6]" at VGA_Ctrl.v(197) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 197
-Info (10041): Inferred latch for "oVGA_B_temp[7]" at VGA_Ctrl.v(197) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 197
-Info (10041): Inferred latch for "oVGA_B_temp[8]" at VGA_Ctrl.v(197) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 197
-Info (10041): Inferred latch for "oVGA_B_temp[9]" at VGA_Ctrl.v(197) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 197
-Info (10041): Inferred latch for "oVGA_G_temp[0]" at VGA_Ctrl.v(197) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 197
-Info (10041): Inferred latch for "oVGA_G_temp[1]" at VGA_Ctrl.v(197) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 197
-Info (10041): Inferred latch for "oVGA_G_temp[2]" at VGA_Ctrl.v(197) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 197
-Info (10041): Inferred latch for "oVGA_G_temp[3]" at VGA_Ctrl.v(197) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 197
-Info (10041): Inferred latch for "oVGA_G_temp[4]" at VGA_Ctrl.v(197) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 197
-Info (10041): Inferred latch for "oVGA_G_temp[5]" at VGA_Ctrl.v(197) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 197
-Info (10041): Inferred latch for "oVGA_G_temp[6]" at VGA_Ctrl.v(197) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 197
-Info (10041): Inferred latch for "oVGA_G_temp[7]" at VGA_Ctrl.v(197) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 197
-Info (10041): Inferred latch for "oVGA_G_temp[8]" at VGA_Ctrl.v(197) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 197
-Info (10041): Inferred latch for "oVGA_G_temp[9]" at VGA_Ctrl.v(197) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 197
+Warning (10230): Verilog HDL assignment warning at VGA_Ctrl.v(183): truncated value with size 32 to match size of target (10) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 183
+Warning (10230): Verilog HDL assignment warning at VGA_Ctrl.v(190): truncated value with size 32 to match size of target (10) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 190
+Warning (10230): Verilog HDL assignment warning at VGA_Ctrl.v(224): truncated value with size 32 to match size of target (10) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 224
+Warning (10230): Verilog HDL assignment warning at VGA_Ctrl.v(232): truncated value with size 32 to match size of target (10) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 232
+Warning (10230): Verilog HDL assignment warning at VGA_Ctrl.v(241): truncated value with size 32 to match size of target (10) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 241
+Warning (10240): Verilog HDL Always Construct warning at VGA_Ctrl.v(99): inferring latch(es) for variable "oVGA_G_temp", which holds its previous value in one or more paths through the always construct File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 99
+Warning (10240): Verilog HDL Always Construct warning at VGA_Ctrl.v(99): inferring latch(es) for variable "oVGA_B_temp", which holds its previous value in one or more paths through the always construct File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 99
+Warning (10240): Verilog HDL Always Construct warning at VGA_Ctrl.v(99): inferring latch(es) for variable "oVGA_R_temp", which holds its previous value in one or more paths through the always construct File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 99
+Warning (10240): Verilog HDL Always Construct warning at VGA_Ctrl.v(99): inferring latch(es) for variable "mnoznik1", which holds its previous value in one or more paths through the always construct File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 99
+Warning (10240): Verilog HDL Always Construct warning at VGA_Ctrl.v(99): inferring latch(es) for variable "mnoznik2", which holds its previous value in one or more paths through the always construct File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 99
+Warning (10240): Verilog HDL Always Construct warning at VGA_Ctrl.v(99): inferring latch(es) for variable "dzielnik", which holds its previous value in one or more paths through the always construct File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 99
+Warning (10230): Verilog HDL assignment warning at VGA_Ctrl.v(271): truncated value with size 32 to match size of target (22) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 271
+Warning (10230): Verilog HDL assignment warning at VGA_Ctrl.v(274): truncated value with size 32 to match size of target (11) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 274
+Warning (10230): Verilog HDL assignment warning at VGA_Ctrl.v(275): truncated value with size 32 to match size of target (11) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 275
+Info (10041): Inferred latch for "oVGA_R_temp[0]" at VGA_Ctrl.v(203) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 203
+Info (10041): Inferred latch for "oVGA_R_temp[1]" at VGA_Ctrl.v(203) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 203
+Info (10041): Inferred latch for "oVGA_R_temp[2]" at VGA_Ctrl.v(203) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 203
+Info (10041): Inferred latch for "oVGA_R_temp[3]" at VGA_Ctrl.v(203) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 203
+Info (10041): Inferred latch for "oVGA_R_temp[4]" at VGA_Ctrl.v(203) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 203
+Info (10041): Inferred latch for "oVGA_R_temp[5]" at VGA_Ctrl.v(203) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 203
+Info (10041): Inferred latch for "oVGA_R_temp[6]" at VGA_Ctrl.v(203) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 203
+Info (10041): Inferred latch for "oVGA_R_temp[7]" at VGA_Ctrl.v(203) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 203
+Info (10041): Inferred latch for "oVGA_R_temp[8]" at VGA_Ctrl.v(203) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 203
+Info (10041): Inferred latch for "oVGA_R_temp[9]" at VGA_Ctrl.v(203) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 203
+Info (10041): Inferred latch for "oVGA_B_temp[0]" at VGA_Ctrl.v(203) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 203
+Info (10041): Inferred latch for "oVGA_B_temp[1]" at VGA_Ctrl.v(203) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 203
+Info (10041): Inferred latch for "oVGA_B_temp[2]" at VGA_Ctrl.v(203) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 203
+Info (10041): Inferred latch for "oVGA_B_temp[3]" at VGA_Ctrl.v(203) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 203
+Info (10041): Inferred latch for "oVGA_B_temp[4]" at VGA_Ctrl.v(203) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 203
+Info (10041): Inferred latch for "oVGA_B_temp[5]" at VGA_Ctrl.v(203) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 203
+Info (10041): Inferred latch for "oVGA_B_temp[6]" at VGA_Ctrl.v(203) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 203
+Info (10041): Inferred latch for "oVGA_B_temp[7]" at VGA_Ctrl.v(203) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 203
+Info (10041): Inferred latch for "oVGA_B_temp[8]" at VGA_Ctrl.v(203) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 203
+Info (10041): Inferred latch for "oVGA_B_temp[9]" at VGA_Ctrl.v(203) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 203
+Info (10041): Inferred latch for "oVGA_G_temp[0]" at VGA_Ctrl.v(203) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 203
+Info (10041): Inferred latch for "oVGA_G_temp[1]" at VGA_Ctrl.v(203) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 203
+Info (10041): Inferred latch for "oVGA_G_temp[2]" at VGA_Ctrl.v(203) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 203
+Info (10041): Inferred latch for "oVGA_G_temp[3]" at VGA_Ctrl.v(203) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 203
+Info (10041): Inferred latch for "oVGA_G_temp[4]" at VGA_Ctrl.v(203) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 203
+Info (10041): Inferred latch for "oVGA_G_temp[5]" at VGA_Ctrl.v(203) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 203
+Info (10041): Inferred latch for "oVGA_G_temp[6]" at VGA_Ctrl.v(203) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 203
+Info (10041): Inferred latch for "oVGA_G_temp[7]" at VGA_Ctrl.v(203) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 203
+Info (10041): Inferred latch for "oVGA_G_temp[8]" at VGA_Ctrl.v(203) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 203
+Info (10041): Inferred latch for "oVGA_G_temp[9]" at VGA_Ctrl.v(203) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 203
 Info (12128): Elaborating entity "Line_Buffer" for hierarchy "Line_Buffer:u10" File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 480
 Info (12128): Elaborating entity "altshift_taps" for hierarchy "Line_Buffer:u10|altshift_taps:ALTSHIFT_TAPS_component" File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/Line_Buffer.v Line: 73
 Info (12130): Elaborated megafunction instantiation "Line_Buffer:u10|altshift_taps:ALTSHIFT_TAPS_component" File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/Line_Buffer.v Line: 73
@@ -6875,25 +6914,61 @@ Info (12128): Elaborating entity "I2C_Controller" for hierarchy "I2C_AV_Config:u
 Warning (10230): Verilog HDL assignment warning at I2C_Controller.v(78): truncated value with size 32 to match size of target (1) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/I2C_Controller.v Line: 78
 Warning (10230): Verilog HDL assignment warning at I2C_Controller.v(77): truncated value with size 32 to match size of target (1) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/I2C_Controller.v Line: 77
 Warning (10230): Verilog HDL assignment warning at I2C_Controller.v(90): truncated value with size 32 to match size of target (6) File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/I2C_Controller.v Line: 90
-Info (278001): Inferred 4 megafunctions from design logic
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "VGA_Ctrl:u9|Div0" File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 185
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "VGA_Ctrl:u9|Div1" File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 222
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "VGA_Ctrl:u9|Div2" File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 230
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "VGA_Ctrl:u9|Div3" File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 237
-Info (12130): Elaborated megafunction instantiation "VGA_Ctrl:u9|lpm_divide:Div0" File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 185
-Info (12133): Instantiated megafunction "VGA_Ctrl:u9|lpm_divide:Div0" with the following parameter: File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 185
-    Info (12134): Parameter "LPM_WIDTHN" = "14"
-    Info (12134): Parameter "LPM_WIDTHD" = "4"
+Warning (14026): LATCH primitive "VGA_Ctrl:u9|oVGA_B_temp[2]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 203
+Warning (14026): LATCH primitive "VGA_Ctrl:u9|oVGA_B_temp[3]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 203
+Warning (14026): LATCH primitive "VGA_Ctrl:u9|oVGA_B_temp[4]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 203
+Warning (14026): LATCH primitive "VGA_Ctrl:u9|oVGA_B_temp[5]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 203
+Warning (14026): LATCH primitive "VGA_Ctrl:u9|oVGA_B_temp[6]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 203
+Warning (14026): LATCH primitive "VGA_Ctrl:u9|oVGA_B_temp[7]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 203
+Warning (14026): LATCH primitive "VGA_Ctrl:u9|oVGA_B_temp[8]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 203
+Warning (14026): LATCH primitive "VGA_Ctrl:u9|oVGA_B_temp[9]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 203
+Warning (14026): LATCH primitive "VGA_Ctrl:u9|oVGA_G_temp[2]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 203
+Warning (14026): LATCH primitive "VGA_Ctrl:u9|oVGA_G_temp[3]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 203
+Warning (14026): LATCH primitive "VGA_Ctrl:u9|oVGA_G_temp[4]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 203
+Warning (14026): LATCH primitive "VGA_Ctrl:u9|oVGA_G_temp[5]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 203
+Warning (14026): LATCH primitive "VGA_Ctrl:u9|oVGA_G_temp[6]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 203
+Warning (14026): LATCH primitive "VGA_Ctrl:u9|oVGA_G_temp[7]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 203
+Warning (14026): LATCH primitive "VGA_Ctrl:u9|oVGA_G_temp[8]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 203
+Warning (14026): LATCH primitive "VGA_Ctrl:u9|oVGA_G_temp[9]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 203
+Warning (14026): LATCH primitive "VGA_Ctrl:u9|oVGA_R_temp[2]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 203
+Warning (14026): LATCH primitive "VGA_Ctrl:u9|oVGA_R_temp[3]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 203
+Warning (14026): LATCH primitive "VGA_Ctrl:u9|oVGA_R_temp[4]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 203
+Warning (14026): LATCH primitive "VGA_Ctrl:u9|oVGA_R_temp[5]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 203
+Warning (14026): LATCH primitive "VGA_Ctrl:u9|oVGA_R_temp[6]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 203
+Warning (14026): LATCH primitive "VGA_Ctrl:u9|oVGA_R_temp[7]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 203
+Warning (14026): LATCH primitive "VGA_Ctrl:u9|oVGA_R_temp[8]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 203
+Warning (14026): LATCH primitive "VGA_Ctrl:u9|oVGA_R_temp[9]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 203
+Warning (14026): LATCH primitive "VGA_Ctrl:u9|oVGA_R_temp[1]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 203
+Warning (14026): LATCH primitive "VGA_Ctrl:u9|oVGA_R_temp[0]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 203
+Warning (14026): LATCH primitive "VGA_Ctrl:u9|oVGA_B_temp[0]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 203
+Warning (14026): LATCH primitive "VGA_Ctrl:u9|oVGA_B_temp[1]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 203
+Info (278001): Inferred 6 megafunctions from design logic
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "VGA_Ctrl:u9|Div1" File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 119
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "VGA_Ctrl:u9|Div0" File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 113
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "VGA_Ctrl:u9|Div3" File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 228
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "VGA_Ctrl:u9|Div5" File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 243
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "VGA_Ctrl:u9|Div2" File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 125
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "VGA_Ctrl:u9|Div4" File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 236
+Info (12130): Elaborated megafunction instantiation "VGA_Ctrl:u9|lpm_divide:Div1" File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 119
+Info (12133): Instantiated megafunction "VGA_Ctrl:u9|lpm_divide:Div1" with the following parameter: File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 119
+    Info (12134): Parameter "LPM_WIDTHN" = "11"
+    Info (12134): Parameter "LPM_WIDTHD" = "2"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
-Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_ibm.tdf
-    Info (12023): Found entity 1: lpm_divide_ibm File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/db/lpm_divide_ibm.tdf Line: 25
-Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_olh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_olh File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/db/sign_div_unsign_olh.tdf Line: 25
-Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_mve.tdf
-    Info (12023): Found entity 1: alt_u_div_mve File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/db/alt_u_div_mve.tdf Line: 23
-Info (12130): Elaborated megafunction instantiation "VGA_Ctrl:u9|lpm_divide:Div1" File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 222
-Info (12133): Instantiated megafunction "VGA_Ctrl:u9|lpm_divide:Div1" with the following parameter: File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 222
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_dbm.tdf
+    Info (12023): Found entity 1: lpm_divide_dbm File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/db/lpm_divide_dbm.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_jlh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_jlh File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/db/sign_div_unsign_jlh.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_cve.tdf
+    Info (12023): Found entity 1: alt_u_div_cve File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/db/alt_u_div_cve.tdf Line: 23
+Info (12130): Elaborated megafunction instantiation "VGA_Ctrl:u9|lpm_divide:Div0" File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 113
+Info (12133): Instantiated megafunction "VGA_Ctrl:u9|lpm_divide:Div0" with the following parameter: File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 113
+    Info (12134): Parameter "LPM_WIDTHN" = "11"
+    Info (12134): Parameter "LPM_WIDTHD" = "2"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12130): Elaborated megafunction instantiation "VGA_Ctrl:u9|lpm_divide:Div3" File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 228
+Info (12133): Instantiated megafunction "VGA_Ctrl:u9|lpm_divide:Div3" with the following parameter: File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 228
     Info (12134): Parameter "LPM_WIDTHN" = "14"
     Info (12134): Parameter "LPM_WIDTHD" = "2"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
@@ -6987,122 +7062,66 @@ Warning (13039): The following bidirectional pins have no drivers
     Warning (13040): bidirectional pin "PS2_DAT2" has no driver File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 177
 Info (13060): One or more bidirectional pins are fed by always enabled tri-state buffers
     Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "AUD_DACLRCK" is moved to its source File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 49
-Warning (13012): Latch VGA_Ctrl:u9|oVGA_B_temp[2] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 197
+Warning (13012): Latch CHOSE_FILTR:ch|iBlue_temp[3] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 291
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[1] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
+Warning (13012): Latch CHOSE_FILTR:ch|iBlue_temp[4] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 291
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[1] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
+Warning (13012): Latch CHOSE_FILTR:ch|iBlue_temp[5] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 291
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[1] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
+Warning (13012): Latch CHOSE_FILTR:ch|iBlue_temp[9] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 291
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[1] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
+Warning (13012): Latch CHOSE_FILTR:ch|iBlue_temp[8] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 291
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[1] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
+Warning (13012): Latch CHOSE_FILTR:ch|iBlue_temp[7] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 291
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[1] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
+Warning (13012): Latch CHOSE_FILTR:ch|iBlue_temp[6] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 291
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[1] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
+Warning (13012): Latch CHOSE_FILTR:ch|iBlue_temp[2] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 291
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[1] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
+Warning (13012): Latch CHOSE_FILTR:ch|iBlue_temp[1] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 291
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[1] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
+Warning (13012): Latch CHOSE_FILTR:ch|iBlue_temp[0] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 291
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[1] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
+Warning (13012): Latch CHOSE_FILTR:ch|iGreen_temp[3] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 291
     Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
-Warning (13012): Latch VGA_Ctrl:u9|oVGA_B_temp[3] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 197
+Warning (13012): Latch CHOSE_FILTR:ch|iGreen_temp[9] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 291
     Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
-Warning (13012): Latch VGA_Ctrl:u9|oVGA_B_temp[4] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 197
+Warning (13012): Latch CHOSE_FILTR:ch|iGreen_temp[8] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 291
     Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
-Warning (13012): Latch VGA_Ctrl:u9|oVGA_B_temp[5] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 197
+Warning (13012): Latch CHOSE_FILTR:ch|iGreen_temp[7] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 291
     Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
-Warning (13012): Latch VGA_Ctrl:u9|oVGA_B_temp[6] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 197
+Warning (13012): Latch CHOSE_FILTR:ch|iGreen_temp[6] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 291
     Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
-Warning (13012): Latch VGA_Ctrl:u9|oVGA_B_temp[7] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 197
+Warning (13012): Latch CHOSE_FILTR:ch|iGreen_temp[5] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 291
     Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
-Warning (13012): Latch VGA_Ctrl:u9|oVGA_B_temp[8] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 197
+Warning (13012): Latch CHOSE_FILTR:ch|iGreen_temp[4] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 291
     Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
-Warning (13012): Latch VGA_Ctrl:u9|oVGA_B_temp[9] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 197
+Warning (13012): Latch CHOSE_FILTR:ch|iGreen_temp[2] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 291
     Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
-Warning (13012): Latch VGA_Ctrl:u9|oVGA_G_temp[2] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 197
+Warning (13012): Latch CHOSE_FILTR:ch|iGreen_temp[1] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 291
     Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
-Warning (13012): Latch VGA_Ctrl:u9|oVGA_G_temp[3] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 197
+Warning (13012): Latch CHOSE_FILTR:ch|iGreen_temp[0] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 291
     Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
-Warning (13012): Latch VGA_Ctrl:u9|oVGA_G_temp[4] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 197
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
-Warning (13012): Latch VGA_Ctrl:u9|oVGA_G_temp[5] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 197
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
-Warning (13012): Latch VGA_Ctrl:u9|oVGA_G_temp[6] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 197
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
-Warning (13012): Latch VGA_Ctrl:u9|oVGA_G_temp[7] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 197
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
-Warning (13012): Latch VGA_Ctrl:u9|oVGA_G_temp[8] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 197
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
-Warning (13012): Latch VGA_Ctrl:u9|oVGA_G_temp[9] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 197
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
-Warning (13012): Latch VGA_Ctrl:u9|oVGA_R_temp[2] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 197
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[6] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
-Warning (13012): Latch VGA_Ctrl:u9|oVGA_R_temp[3] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 197
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[6] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
-Warning (13012): Latch VGA_Ctrl:u9|oVGA_R_temp[4] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 197
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[6] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
-Warning (13012): Latch VGA_Ctrl:u9|oVGA_R_temp[5] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 197
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[6] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
-Warning (13012): Latch VGA_Ctrl:u9|oVGA_R_temp[6] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 197
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[6] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
-Warning (13012): Latch VGA_Ctrl:u9|oVGA_R_temp[7] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 197
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[6] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
-Warning (13012): Latch VGA_Ctrl:u9|oVGA_R_temp[8] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 197
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[6] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
-Warning (13012): Latch VGA_Ctrl:u9|oVGA_R_temp[9] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 197
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[6] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
-Warning (13012): Latch CHOSE_FILTR:ch|iBlue_temp[2] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
-Warning (13012): Latch CHOSE_FILTR:ch|iBlue_temp[5] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
-Warning (13012): Latch CHOSE_FILTR:ch|iBlue_temp[4] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
-Warning (13012): Latch CHOSE_FILTR:ch|iBlue_temp[3] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
-Warning (13012): Latch CHOSE_FILTR:ch|iBlue_temp[9] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
-Warning (13012): Latch CHOSE_FILTR:ch|iBlue_temp[8] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
-Warning (13012): Latch CHOSE_FILTR:ch|iBlue_temp[7] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
-Warning (13012): Latch CHOSE_FILTR:ch|iBlue_temp[6] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
-Warning (13012): Latch CHOSE_FILTR:ch|iBlue_temp[1] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
-Warning (13012): Latch CHOSE_FILTR:ch|iBlue_temp[0] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
-Warning (13012): Latch VGA_Ctrl:u9|oVGA_R_temp[1] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 197
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[6] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
-Warning (13012): Latch CHOSE_FILTR:ch|iRed_temp[4] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
-Warning (13012): Latch CHOSE_FILTR:ch|iRed_temp[3] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
-Warning (13012): Latch CHOSE_FILTR:ch|iRed_temp[2] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
-Warning (13012): Latch CHOSE_FILTR:ch|iRed_temp[1] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
-Warning (13012): Latch CHOSE_FILTR:ch|iRed_temp[9] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
-Warning (13012): Latch CHOSE_FILTR:ch|iRed_temp[8] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
-Warning (13012): Latch CHOSE_FILTR:ch|iRed_temp[7] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
-Warning (13012): Latch CHOSE_FILTR:ch|iRed_temp[6] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
-Warning (13012): Latch CHOSE_FILTR:ch|iRed_temp[5] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
-Warning (13012): Latch CHOSE_FILTR:ch|iRed_temp[0] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
-Warning (13012): Latch VGA_Ctrl:u9|oVGA_R_temp[0] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 197
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[6] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
-Warning (13012): Latch VGA_Ctrl:u9|oVGA_B_temp[0] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 197
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
-Warning (13012): Latch VGA_Ctrl:u9|oVGA_B_temp[1] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/v/VGA_Ctrl.v Line: 197
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
-Warning (13012): Latch CHOSE_FILTR:ch|iGreen_temp[9] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
-Warning (13012): Latch CHOSE_FILTR:ch|iGreen_temp[8] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
-Warning (13012): Latch CHOSE_FILTR:ch|iGreen_temp[7] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
-Warning (13012): Latch CHOSE_FILTR:ch|iGreen_temp[6] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
-Warning (13012): Latch CHOSE_FILTR:ch|iGreen_temp[5] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
-Warning (13012): Latch CHOSE_FILTR:ch|iGreen_temp[4] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
-Warning (13012): Latch CHOSE_FILTR:ch|iGreen_temp[3] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
-Warning (13012): Latch CHOSE_FILTR:ch|iGreen_temp[2] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
-Warning (13012): Latch CHOSE_FILTR:ch|iGreen_temp[1] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
-Warning (13012): Latch CHOSE_FILTR:ch|iGreen_temp[0] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[8] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
+Warning (13012): Latch CHOSE_FILTR:ch|iRed_temp[9] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 291
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[2] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
+Warning (13012): Latch CHOSE_FILTR:ch|iRed_temp[8] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 291
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[2] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
+Warning (13012): Latch CHOSE_FILTR:ch|iRed_temp[7] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 291
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[2] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
+Warning (13012): Latch CHOSE_FILTR:ch|iRed_temp[6] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 291
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[2] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
+Warning (13012): Latch CHOSE_FILTR:ch|iRed_temp[5] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 291
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[2] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
+Warning (13012): Latch CHOSE_FILTR:ch|iRed_temp[4] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 291
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[2] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
+Warning (13012): Latch CHOSE_FILTR:ch|iRed_temp[3] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 291
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[2] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
+Warning (13012): Latch CHOSE_FILTR:ch|iRed_temp[2] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 291
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[2] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
+Warning (13012): Latch CHOSE_FILTR:ch|iRed_temp[1] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 291
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[2] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
+Warning (13012): Latch CHOSE_FILTR:ch|iRed_temp[0] has unsafe behavior File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 291
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[2] File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 180
 Info (13000): Registers with preset signals will power-up high File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/Sdram_Control_4Port/Sdram_Control_4Port.v Line: 414
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
@@ -7117,36 +7136,6 @@ Warning (13004): Presettable and clearable registers converted to equivalent cir
     Warning (13310): Register "Sdram_Control_4Port:u6|rRD2_ADDR[7]" is converted into an equivalent circuit using register "Sdram_Control_4Port:u6|rRD2_ADDR[7]~_emulated" and latch "Sdram_Control_4Port:u6|rRD2_ADDR[11]~3" File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/Sdram_Control_4Port/Sdram_Control_4Port.v Line: 414
     Warning (13310): Register "Sdram_Control_4Port:u6|rRD2_ADDR[15]" is converted into an equivalent circuit using register "Sdram_Control_4Port:u6|rRD2_ADDR[15]~_emulated" and latch "Sdram_Control_4Port:u6|rRD2_ADDR[11]~3" File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/Sdram_Control_4Port/Sdram_Control_4Port.v Line: 414
     Warning (13310): Register "Sdram_Control_4Port:u6|rRD2_ADDR[16]" is converted into an equivalent circuit using register "Sdram_Control_4Port:u6|rRD2_ADDR[16]~_emulated" and latch "Sdram_Control_4Port:u6|rRD1_ADDR[8]~1" File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/Sdram_Control_4Port/Sdram_Control_4Port.v Line: 414
-Warning (14026): LATCH primitive "CHOSE_FILTR:ch|iBlue_temp[2]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Warning (14026): LATCH primitive "CHOSE_FILTR:ch|iBlue_temp[5]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Warning (14026): LATCH primitive "CHOSE_FILTR:ch|iBlue_temp[4]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Warning (14026): LATCH primitive "CHOSE_FILTR:ch|iBlue_temp[3]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Warning (14026): LATCH primitive "CHOSE_FILTR:ch|iBlue_temp[9]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Warning (14026): LATCH primitive "CHOSE_FILTR:ch|iBlue_temp[8]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Warning (14026): LATCH primitive "CHOSE_FILTR:ch|iBlue_temp[7]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Warning (14026): LATCH primitive "CHOSE_FILTR:ch|iBlue_temp[6]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Warning (14026): LATCH primitive "CHOSE_FILTR:ch|iBlue_temp[1]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Warning (14026): LATCH primitive "CHOSE_FILTR:ch|iBlue_temp[0]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Warning (14026): LATCH primitive "CHOSE_FILTR:ch|iRed_temp[4]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Warning (14026): LATCH primitive "CHOSE_FILTR:ch|iRed_temp[3]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Warning (14026): LATCH primitive "CHOSE_FILTR:ch|iRed_temp[2]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Warning (14026): LATCH primitive "CHOSE_FILTR:ch|iRed_temp[1]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Warning (14026): LATCH primitive "CHOSE_FILTR:ch|iRed_temp[9]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Warning (14026): LATCH primitive "CHOSE_FILTR:ch|iRed_temp[8]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Warning (14026): LATCH primitive "CHOSE_FILTR:ch|iRed_temp[7]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Warning (14026): LATCH primitive "CHOSE_FILTR:ch|iRed_temp[6]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Warning (14026): LATCH primitive "CHOSE_FILTR:ch|iRed_temp[5]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Warning (14026): LATCH primitive "CHOSE_FILTR:ch|iRed_temp[0]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Warning (14026): LATCH primitive "CHOSE_FILTR:ch|iGreen_temp[9]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Warning (14026): LATCH primitive "CHOSE_FILTR:ch|iGreen_temp[8]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Warning (14026): LATCH primitive "CHOSE_FILTR:ch|iGreen_temp[7]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Warning (14026): LATCH primitive "CHOSE_FILTR:ch|iGreen_temp[6]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Warning (14026): LATCH primitive "CHOSE_FILTR:ch|iGreen_temp[5]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Warning (14026): LATCH primitive "CHOSE_FILTR:ch|iGreen_temp[4]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Warning (14026): LATCH primitive "CHOSE_FILTR:ch|iGreen_temp[3]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Warning (14026): LATCH primitive "CHOSE_FILTR:ch|iGreen_temp[2]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Warning (14026): LATCH primitive "CHOSE_FILTR:ch|iGreen_temp[1]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
-Warning (14026): LATCH primitive "CHOSE_FILTR:ch|iGreen_temp[0]" is permanently enabled File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/CHOSE_FILTR.v Line: 127
 Warning (13009): TRI or OPNDRN buffers permanently enabled
     Warning (13010): Node "AUD_ADCLRCK~synth" File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 46
     Warning (13010): Node "AUD_BCLK~synth" File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 47
@@ -7230,18 +7219,18 @@ Warning (21074): Design contains 9 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "KEY[1]" File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 168
     Warning (15610): No output dependent on input pin "KEY[2]" File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 168
     Warning (15610): No output dependent on input pin "KEY[3]" File: /dmj/2015/fk370394/FPGA/projekt/DE1_SoC_TV/DE1_SoC_TV.v Line: 168
-Info (21057): Implemented 2824 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 2820 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 32 input pins
     Info (21059): Implemented 113 output pins
     Info (21060): Implemented 96 bidirectional pins
-    Info (21061): Implemented 2473 logic cells
+    Info (21061): Implemented 2469 logic cells
     Info (21064): Implemented 96 RAM segments
     Info (21065): Implemented 3 PLLs
     Info (21062): Implemented 11 DSP elements
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 388 warnings
-    Info: Peak virtual memory: 1283 megabytes
-    Info: Processing ended: Tue May  8 13:43:28 2018
-    Info: Elapsed time: 00:00:21
-    Info: Total CPU time (on all processors): 00:00:29
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 330 warnings
+    Info: Peak virtual memory: 1275 megabytes
+    Info: Processing ended: Tue May 29 12:38:29 2018
+    Info: Elapsed time: 00:00:19
+    Info: Total CPU time (on all processors): 00:00:28
 
 

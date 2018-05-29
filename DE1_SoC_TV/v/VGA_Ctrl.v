@@ -93,36 +93,42 @@ integer dzielnik;
 //////////////////////
 
 
-///////////////////////////////////////Wyświetla fragment obrazu na w różnej jasności
+
 always @ * begin
-	if(SW[7]==0&& SW[6]==0 && SW[8]==0 && SW[9]==0)begin
+////////////////////////////////////////////////Wyświetla nieprzetworzony obraz 
+	if((SW[7]==0&& SW[6]==0 && SW[8]==0 && SW[9]==0) || (SW[9]==1 && SW[8]==0) || (SW[8]==1 && SW[9]==0))begin
 		oVGA_G_temp		=	iGreen;
 		oVGA_B_temp		=	iBlue;
 		oVGA_R_temp		=	iRed;
 		end
+		
+		
+		///////////////////////////////////////Wyświetla fragment obrazu na w różnej jasności
+		
+		
 	else if(SW[7]==1&&SW[6]==0)begin       //Ustalenie max danego koloru 10'b1111111111
 		oVGA_G_temp		=	(H_Cont<=H_HALF && V_Cont<=V_HALF) ?   iGreen :      //lewy górny  dobre parametry to 480,270
 					 (H_Cont>H_HALF && V_Cont<=V_HALF) ?   iGreen/2 :				 //prawy górny
 					 (H_Cont<=H_HALF && V_Cont>V_HALF) ?   iGreen/4 :	//11111'b1 :      //lewy dolny
-					 (H_Cont>H_HALF && V_Cont>V_HALF ) ?    iGreen/8 :
+					 (H_Cont>H_HALF && V_Cont>V_HALF ) ?    iGreen*2/3 :
 //	 (H_Cont>H_HALF && V_Cont>V_HALF && iGreen>=(iBlue+iRed)/2) ?    iGreen : //!!!!!!!!!!!!!!!!
 							0;
 		oVGA_B_temp		=	(H_Cont<=H_HALF && V_Cont<=V_HALF) ?   iBlue :      //lewy górny  dobre parametry to 480,270
 					 (H_Cont>H_HALF && V_Cont<=V_HALF) ?   iBlue /2 :				 //prawy górny
 					 (H_Cont<=H_HALF && V_Cont>V_HALF) ?   iBlue/4 : 	//11111'b1 :      //lewy dolny
-					 (H_Cont>H_HALF && V_Cont>V_HALF) ?    iBlue /8 :
+					 (H_Cont>H_HALF && V_Cont>V_HALF) ?    iBlue *2/3 :
 							0;
 							
 		oVGA_R_temp		= (H_Cont<=H_HALF && V_Cont<=V_HALF) ?   iRed :      //lewy górny  dobre parametry to 480,270
 					 (H_Cont>H_HALF && V_Cont<=V_HALF) ?   iRed/2 :				 //prawy górny
 					 (H_Cont<=H_HALF && V_Cont>V_HALF) ?   iRed/4 :	     //lewy dolny
-					 (H_Cont>H_HALF && V_Cont>V_HALF) ?    iRed/8 :				 		//prawy dolny				
+					 (H_Cont>H_HALF && V_Cont>V_HALF) ?    iRed*2/3 :				 		//prawy dolny				
                       0 ;
 		end
 	
 	
 	
-	////////////////////////// Wyświetla cztery różne kolorki 
+	////////////////////////// Wyświetla cztery różne kolorki każdy bez jednego koloru podstawowego  
 	
 	if (SW[7]==0&&SW[6]==1)begin
 				
@@ -166,7 +172,7 @@ always @ * begin
 					(SW[5:3]==7) ? 7 :
 					0;	
 					
-					//////////TO DO: Normowanie (RED) się nie sprawdza, nalezy dodać przyciski odpowiadające za zmianę mianownika 
+				//////////////////Wycinanie kolorów poza RGB - kolory ustawianie przy pomocy SW[5-0]
 	
 		oVGA_G_temp		=	(H_Cont<=H_HALF && V_Cont<=V_HALF) ?   iGreen :      //lewy górny  dobre parametry to 480,270
 					 (H_Cont>H_HALF && V_Cont<=V_HALF) ?   0 :				 //prawy górny
@@ -182,7 +188,7 @@ always @ * begin
 							0;
 							
 		oVGA_R_temp		= (H_Cont<=H_HALF && V_Cont<=V_HALF) ?   iRed :      //lewy górny  dobre parametry to 480,270
-					 (H_Cont>H_HALF && V_Cont<=V_HALF && iRed>=(mnoznik1*iGreen+mnoznik2*iBlue)/(mnoznik1+mnoznik2)) ?   iRed :				 //prawy górny
+					 (H_Cont>H_HALF && V_Cont<=V_HALF && iRed>=(mnoznik1*iGreen+mnoznik2*iBlue)/2) ?   iRed :				 //prawy górny
 					 (H_Cont>H_HALF && V_Cont<=V_HALF  && iRed<(mnoznik1*iGreen+mnoznik2*iBlue)/2) ?   0 :	
 					 (H_Cont<=H_HALF && V_Cont>V_HALF) ?   0 :	     //lewy dolny
 					 (H_Cont>H_HALF && V_Cont>V_HALF) ?     0 :
@@ -190,7 +196,7 @@ always @ * begin
 		end
 	
 	
-	///////////////////////////////////////Tutaj jest brzydko rozwiązane urzycie przełaczników. Przy wersji nie testowej warto to jakoś zunifikować
+	///////////////////////////////////////Tutaj jest brzydko rozwiązane urzycie przełaczników. Przy wersji nie testowej warto to jakoś usprawnić? 
 	
 	
 	
@@ -213,7 +219,7 @@ always @ * begin
 					(SW[5:3]==7) ? 7 :
 					0;	
 					
-			dzielnik=3; /////////////////////////////TODO: działa rozpoznawanie kolorów, można sprawdzić kilka wartości np kolor czlowieka to sw2 sw3
+			dzielnik=3; ///////////////////////////////Wycinanie kolorów poza kolorem  ustalonym przy pomocy SW[5-0]
 	
 		oVGA_G_temp		=	(H_Cont<=H_HALF && V_Cont<=V_HALF) ?   iGreen :      //lewy górny  dobre parametry to 480,270
 					 (H_Cont>H_HALF && V_Cont<=V_HALF && oVGA_R_temp>0) ?   iGreen :				 //prawy górny
@@ -246,7 +252,7 @@ always @ * begin
 	
 	
 	
-	////////////kod testowy
+	
 	
 	
 	
